@@ -38,7 +38,7 @@ int dfs(int v,int t,int f){
     return 0;
 }
 int dinic(int s,int t){
-    int flow = 0;
+    int flow = 0;  
     while(1){
         bfs(s);
         if(level[t] < 0) return flow;

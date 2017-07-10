@@ -53,7 +53,7 @@ int dinic() {
 }
 int main(){
 	//freopen("a.in","r",stdin);
-	int n,m,g,c,d,l,r;
+	int g,c,d,l,r;
 	while(~scanf("%d%d",&n,&m)){
 		init();
 		s = n + m;

@@ -1,3 +1,4 @@
+//查询模式串出现次数
 #include <bits/stdc++.h>
 using namespace std;
 struct Trie{

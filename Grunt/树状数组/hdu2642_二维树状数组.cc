@@ -1,4 +1,5 @@
 //二维树状数组板题
+//单点插入区间查询
 #include <bits/stdc++.h>
 using namespace std;
 

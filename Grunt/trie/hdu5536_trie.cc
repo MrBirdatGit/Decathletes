@@ -2,6 +2,7 @@
 //唯一难点在于复杂度估计
 //毕竟跑满10*1000*1000*31在非cf上很容易挂
 //垃圾曹主席, 这特么也算模拟？
+//曹主席放错题了，垃圾垃圾
 #include <bits/stdc++.h>
 using namespace std;
 struct Trie{

@@ -1,8 +1,9 @@
 //好题
 //问题归结为:
 //能否将总重量不大于1e6的砝码分成两堆, 其中一堆重量为k
-//用多重背包的按位拆分+bitset可以达到o(n*sigma(logk)/64)
-//而由于sigma(k)=n, 最坏情况sigma(logk)~sqrt(n)
+//用多重背包的按位拆分+bitset可以达到o(k*sigma(logAi)/64)
+//而由于sigma(i*Ai)=n, 最坏情况O(sigma(logAi))~O(sqrt(n))
+//所以总复杂度是O(k*sqrt(n)/64)
 #include <bits/stdc++.h>
 using namespace std;
 

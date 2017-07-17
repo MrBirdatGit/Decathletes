@@ -28,7 +28,7 @@ int main(){
 	for(int i=1;i<=n;i++){
 		for(int j=1;j<=n;j++)scanf("%lld", &c[i][j]);
 	}
-	for(int tst=1;tst<=50;tst++){
+	for(int tst=1;tst<=10;tst++){
 		bool ok=true;
 		for(int i=1;i<=n;i++)t[i]=rand()%mod;
 		memset(t1, 0, sizeof(t1));

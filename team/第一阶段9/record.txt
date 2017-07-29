@@ -1,6 +1,0 @@
-D、C水题1A，I拓扑排序忘记条件WA*1，G线段树WA*3，A脑洞题没考虑全WA*1，E dp 1A。
-to do：
-B（凸包？）MJH
-F（费用流？）XRT
-H（概率）JLW MJH
-J（题意？）JLW

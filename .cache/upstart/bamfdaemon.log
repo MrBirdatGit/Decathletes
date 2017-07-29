@@ -1,2 +1,0 @@
-
-(bamfdaemon:28391): GLib-GObject-CRITICAL **: g_object_set_data: assertion 'G_IS_OBJECT (object)' failed

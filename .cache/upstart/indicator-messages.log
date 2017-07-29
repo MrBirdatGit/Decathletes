@@ -1,0 +1,4 @@
+
+(process:28551): GLib-GObject-WARNING **: instance with invalid (NULL) class pointer
+
+(process:28551): GLib-GObject-CRITICAL **: g_signal_emit_valist: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed

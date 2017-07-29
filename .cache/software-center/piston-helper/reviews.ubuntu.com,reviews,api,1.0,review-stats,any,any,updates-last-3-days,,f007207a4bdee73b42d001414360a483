@@ -1,0 +1,164 @@
+status: 200
+content-length: 3936
+expires: Sat, 29 Jul 2017 09:52:14 GMT
+content-location: https://reviews.ubuntu.com/reviews/api/1.0/review-stats/any/any/updates-last-3-days/
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+vary: Accept,Accept-Encoding
+server: gunicorn/19.3.0
+last-modified: Sat, 29 Jul 2017 05:52:14 GMT
+-content-encoding: gzip
+x-bzr-revision-number: 322
+cache-control: max-age=14400
+date: Sat, 29 Jul 2017 05:53:09 GMT
+content-type: application/json; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+[
+    {
+        "ratings_total": 3, 
+        "ratings_average": "2.33", 
+        "app_name": "", 
+        "package_name": "gstreamer1.0-plugins-ugly", 
+        "histogram": "[2, 0, 0, 0, 1]"
+    }, 
+    {
+        "ratings_total": 85, 
+        "ratings_average": "2.79", 
+        "app_name": "", 
+        "package_name": "ocrfeeder", 
+        "histogram": "[29, 10, 9, 24, 13]"
+    }, 
+    {
+        "ratings_total": 19, 
+        "ratings_average": "3.53", 
+        "app_name": "", 
+        "package_name": "usb-creator-kde", 
+        "histogram": "[3, 2, 4, 2, 8]"
+    }, 
+    {
+        "ratings_total": 12, 
+        "ratings_average": "2.33", 
+        "app_name": "", 
+        "package_name": "gnome-photos", 
+        "histogram": "[5, 2, 2, 2, 1]"
+    }, 
+    {
+        "ratings_total": 30, 
+        "ratings_average": "3.90", 
+        "app_name": "", 
+        "package_name": "vokoscreen", 
+        "histogram": "[6, 0, 2, 5, 17]"
+    }, 
+    {
+        "ratings_total": 165, 
+        "ratings_average": "2.79", 
+        "app_name": "", 
+        "package_name": "usb-creator-gtk", 
+        "histogram": "[73, 9, 12, 21, 50]"
+    }, 
+    {
+        "ratings_total": 404, 
+        "ratings_average": "4.78", 
+        "app_name": "", 
+        "package_name": "ubuntu-restricted-extras", 
+        "histogram": "[4, 2, 14, 38, 346]"
+    }, 
+    {
+        "ratings_total": 92, 
+        "ratings_average": "3.99", 
+        "app_name": "", 
+        "package_name": "xfburn", 
+        "histogram": "[14, 3, 6, 16, 53]"
+    }, 
+    {
+        "ratings_total": 131, 
+        "ratings_average": "2.70", 
+        "app_name": "", 
+        "package_name": "webbrowser-app", 
+        "histogram": "[45, 20, 17, 27, 22]"
+    }, 
+    {
+        "ratings_total": 37, 
+        "ratings_average": "4.59", 
+        "app_name": "", 
+        "package_name": "kate", 
+        "histogram": "[1, 0, 2, 7, 27]"
+    }, 
+    {
+        "ratings_total": 37, 
+        "ratings_average": "4.27", 
+        "app_name": "", 
+        "package_name": "krita", 
+        "histogram": "[4, 1, 1, 6, 25]"
+    }, 
+    {
+        "ratings_total": 168, 
+        "ratings_average": "3.67", 
+        "app_name": "", 
+        "package_name": "pdfmod", 
+        "histogram": "[28, 13, 18, 37, 72]"
+    }, 
+    {
+        "ratings_total": 135, 
+        "ratings_average": "4.18", 
+        "app_name": "", 
+        "package_name": "pithos", 
+        "histogram": "[16, 7, 5, 16, 91]"
+    }, 
+    {
+        "ratings_total": 298, 
+        "ratings_average": "4.15", 
+        "app_name": "", 
+        "package_name": "eclipse-platform", 
+        "histogram": "[28, 13, 28, 45, 184]"
+    }, 
+    {
+        "ratings_total": 12, 
+        "ratings_average": "2.42", 
+        "app_name": "", 
+        "package_name": "gnome-sound-recorder", 
+        "histogram": "[6, 0, 2, 3, 1]"
+    }, 
+    {
+        "ratings_total": 14, 
+        "ratings_average": "4.93", 
+        "app_name": "", 
+        "package_name": "kodi", 
+        "histogram": "[0, 0, 0, 1, 13]"
+    }, 
+    {
+        "ratings_total": 632, 
+        "ratings_average": "4.86", 
+        "app_name": "", 
+        "package_name": "gparted", 
+        "histogram": "[5, 4, 6, 47, 570]"
+    }, 
+    {
+        "ratings_total": 10, 
+        "ratings_average": "4.70", 
+        "app_name": "", 
+        "package_name": "ubuntu-mate-welcome", 
+        "histogram": "[0, 0, 1, 1, 8]"
+    }, 
+    {
+        "ratings_total": 21, 
+        "ratings_average": "2.05", 
+        "app_name": "", 
+        "package_name": "wine-stable", 
+        "histogram": "[13, 2, 1, 2, 3]"
+    }, 
+    {
+        "ratings_total": 4, 
+        "ratings_average": "4.50", 
+        "app_name": "", 
+        "package_name": "gnome-recipes", 
+        "histogram": "[0, 0, 1, 0, 3]"
+    }, 
+    {
+        "ratings_total": 1, 
+        "ratings_average": "5.00", 
+        "app_name": "", 
+        "package_name": "stardict-common", 
+        "histogram": "[0, 0, 0, 0, 1]"
+    }
+]

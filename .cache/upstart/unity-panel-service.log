@@ -1,0 +1,204 @@
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-WARNING **: Already have a menu for window ID 44040223 with path /com/canonical/menu/2A0001F from :1.80, unregistering that one
+
+(unity-panel-service:28497): Gtk-CRITICAL **: gtk_label_set_text_with_mnemonic: assertion 'str != NULL' failed
+
+(unity-panel-service:28497): Gtk-CRITICAL **: gtk_label_set_text_with_mnemonic: assertion 'str != NULL' failed
+
+(unity-panel-service:28497): Gtk-CRITICAL **: gtk_label_set_text_with_mnemonic: assertion 'str != NULL' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-WARNING **: Already have a menu for window ID 44040223 with path /com/canonical/menu/2A0001F from :1.102, unregistering that one
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-WARNING **: Already have a menu for window ID 44040223 with path /com/canonical/menu/2A0001F from :1.107, unregistering that one
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 98: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-WARNING **: Already have a menu for window ID 44040223 with path /com/canonical/menu/2A0001F from :1.184, unregistering that one
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-WARNING **: Already have a menu for window ID 48234527 with path /com/canonical/menu/2E0001F from :1.201, unregistering that one
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-WARNING **: Already have a menu for window ID 48234527 with path /com/canonical/menu/2E0001F from :1.217, unregistering that one
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 288: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 288: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 34: 已到超时限制
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 384: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 3: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 385: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'closed' on menu item 1: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'opened' on menu item 2: 已到超时限制
+
+(unity-panel-service:28497): LIBDBUSMENU-GLIB-WARNING **: Unable to call event 'clicked' on menu item 66: 已到超时限制

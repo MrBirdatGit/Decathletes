@@ -1,0 +1,259 @@
+compiz (core) - Info: Loading plugin: core
+compiz (core) - Info: Starting plugin: core
+compiz (core) - Info: Loading plugin: ccp
+compiz (core) - Info: Starting plugin: ccp
+compizconfig - Info: Backend     : gsettings
+compizconfig - Info: Integration : true
+compizconfig - Info: Profile     : unity
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.01.upgrade, reads may conflict
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.02.upgrade, reads may conflict
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.03.upgrade, reads may conflict
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.04.upgrade, reads may conflict
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.05.upgrade, reads may conflict
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.06.upgrade, reads may conflict
+compizconfig - Warning: unable to lock file /usr/share/compizconfig/upgrades/com.canonical.unity.unity.07.upgrade, reads may conflict
+compiz (core) - Info: Loading plugin: composite
+compiz (core) - Info: Starting plugin: composite
+compiz (core) - Info: Loading plugin: opengl
+compiz (core) - Info: Unity is fully supported by your hardware.
+compiz (core) - Info: Unity is fully supported by your hardware.
+compiz (core) - Info: Starting plugin: opengl
+compiz (core) - Info: Loading plugin: commands
+compiz (core) - Info: Starting plugin: commands
+compiz (core) - Info: Loading plugin: copytex
+compiz (core) - Info: Starting plugin: copytex
+compiz (core) - Info: Loading plugin: mousepoll
+compiz (core) - Info: Starting plugin: mousepoll
+compiz (core) - Info: Loading plugin: resize
+compiz (core) - Info: Starting plugin: resize
+compiz (core) - Info: Loading plugin: grid
+compiz (core) - Info: Starting plugin: grid
+compiz (core) - Info: Loading plugin: place
+compiz (core) - Info: Starting plugin: place
+compiz (core) - Info: Loading plugin: regex
+compiz (core) - Info: Starting plugin: regex
+compiz (core) - Info: Loading plugin: snap
+compiz (core) - Info: Starting plugin: snap
+compiz (core) - Info: Loading plugin: vpswitch
+compiz (core) - Info: Starting plugin: vpswitch
+compiz (core) - Info: Loading plugin: imgpng
+compiz (core) - Info: Starting plugin: imgpng
+compiz (core) - Info: Loading plugin: move
+compiz (core) - Info: Starting plugin: move
+compiz (core) - Info: Loading plugin: compiztoolbox
+compiz (core) - Info: Starting plugin: compiztoolbox
+compiz (core) - Info: Loading plugin: wall
+compiz (core) - Info: Starting plugin: wall
+compiz (core) - Info: Loading plugin: session
+compiz (core) - Info: Starting plugin: session
+compiz (core) - Info: Loading plugin: animation
+compiz (core) - Info: Starting plugin: animation
+compiz (core) - Info: Loading plugin: workarounds
+compiz (core) - Info: Starting plugin: workarounds
+compiz (core) - Info: Loading plugin: unitymtgrabhandles
+compiz (core) - Info: Starting plugin: unitymtgrabhandles
+compiz (core) - Info: Loading plugin: expo
+compiz (core) - Info: Starting plugin: expo
+compiz (core) - Info: Loading plugin: fade
+compiz (core) - Info: Starting plugin: fade
+compiz (core) - Info: Loading plugin: ezoom
+compiz (core) - Info: Starting plugin: ezoom
+compiz (core) - Info: Loading plugin: scale
+compiz (core) - Info: Starting plugin: scale
+compiz (core) - Info: Loading plugin: unityshell
+compiz (core) - Info: Starting plugin: unityshell
+WARN  2017-07-25 17:26:20 unity.glib.dbus.server GLibDBusServer.cpp:593 Can't register object 'org.gnome.Shell' yet as we don't have a connection, waiting for it...
+WARN  2017-07-25 17:26:20 unity.debug.interface DebugDBusInterface.cpp:217 Unable to load entry point in libxpathselect: libxpathselect.so.1.4: 无法打开共享对象文件: 没有那个文件或目录 -- full D-Bus introspection will not be available
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (14 vs 28)
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (2 vs 4)
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (3 vs 6)
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (18 vs 36)
+WARN  2017-07-25 17:26:20 unity{?*} <unknown>:0 protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (4 vs 8)
+WARN  2017-07-25 17:26:20 unity.dash.gsettingsscopereader GSettingsScopes.cpp:108 Error fetching protocol metadata for scope: social.scope : 在搜索目录中无法找到有效的键文件
+WARN  2017-07-25 17:26:21 unity.glib.dbus.server GLibDBusServer.cpp:593 Can't register object 'com.canonical.Unity.Launcher' yet as we don't have a connection, waiting for it...
+WARN  2017-07-25 17:26:22 unity.glib.dbus.server GLibDBusServer.cpp:593 Can't register object 'com.canonical.Unity.Dash' yet as we don't have a connection, waiting for it...
+WARN  2017-07-25 17:26:22 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-25 17:26:22 unity.glib.dbus.server GLibDBusServer.cpp:593 Can't register object 'org.gnome.SessionManager.EndSessionDialog' yet as we don't have a connection, waiting for it...
+WARN  2017-07-25 17:26:22 unity.glib.dbus.server GLibDBusServer.cpp:593 Can't register object 'com.canonical.Unity.Session' yet as we don't have a connection, waiting for it...
+WARN  2017-07-25 17:26:22 unity.glib.dbus.server GLibDBusServer.cpp:593 Can't register object 'org.gnome.ScreenSaver' yet as we don't have a connection, waiting for it...
+ERROR 2017-07-25 17:26:23 unity.glib.dbus.server GLibDBusServer.cpp:538 DBus name lost 'org.gnome.Shell'
+ERROR 2017-07-25 17:26:23 unity.glib.dbus.server GLibDBusServer.cpp:538 DBus name lost 'com.canonical.Unity'
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.key.gnome.grabber GnomeKeyGrabber.cpp:94 Trying to grab a disabled action, we skip it
+WARN  2017-07-25 17:26:23 unity.glib.dbus.proxy GLibDBusProxy.cpp:196 Unable to connect to proxy: "为 org.freedesktop.FileManager1 调用 StartServiceByName 出错： GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.FileManager1 exited with status 1"... Trying to reconnect (attempt 1)
+WARN  2017-07-25 17:26:33 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-25 17:28:02 unity.iconloader IconLoader.cpp:756 Unable to load icon file:/// at size -1x22: 无法打开目录
+
+(process:29085): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(nautilus:29212): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+
+(nautilus:29212): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+
+(process:29599): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+1500975482725	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1500975482886	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1500975483550	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1501130596791	addons.xpi	WARN	Exception running bootstrap method install on loop@mozilla.org: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///tmp/guest-s838c8/.mozilla/firefox/iq95na2u.default/features/%7B686354f3-414c-4ae6-9ae5-0c3a58d2e6f5%7D/loop@mozilla.org.xpi!/bootstrap.js :: install :: line 21"  data: no] Stack trace: install()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///tmp/guest-s838c8/.mozilla/firefox/iq95na2u.default/features/%7B686354f3-414c-4ae6-9ae5-0c3a58d2e6f5%7D/loop@mozilla.org.xpi!/bootstrap.js:21 < this.XPIProvider.callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4657 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2104 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3642 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2667 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:833 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:1016 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2783 < amManager.prototype.observe()@resource://gre/components/addonManager.js:56
+ERROR 2017-07-27 12:46:06 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-07-27 12:46:06 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x3912e10 at position 7. The row has probably been removed
+ERROR 2017-07-27 12:46:06 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x3912e10 holds a NULL value in row 7
+1501131073978	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1501131074252	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1501131074701	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1501131074715	addons.update-checker	WARN	Update manifest for malware-remediation@mozilla.org did not contain an updates property
+ERROR 2017-07-27 12:59:14 unity.settings UnitySettings.cpp:293 Invalid monitor index: -1. Returning index 0 monitor instead.
+
+** (gnome-calculator:31058): WARNING **: currency.vala:407: Currency LTL is not provided by IMF or ECB
+WARN  2017-07-27 13:16:32 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-27 13:37:34 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-27 13:39:24 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(soffice:32466): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+
+(soffice:32479): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+
+(soffice:32479): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+
+(soffice:32479): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+
+** (soffice:32479): WARNING **: Invalidate all children called
+
+WARN  2017-07-27 14:37:14 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-27 14:42:49 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:1171): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+ERROR 2017-07-27 15:35:04 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-07-27 15:35:04 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x3912e10 at position 10. The row has probably been removed
+ERROR 2017-07-27 15:35:04 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x3912e10 holds a NULL value in row 10
+
+(process:2722): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:23849): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+
+(process:24112): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-28 12:38:20 unity.a11y.expanderview unity-expander-view-accessible.cpp:185 has_focus = 1
+WARN  2017-07-28 12:38:21 unity.a11y.expanderview unity-expander-view-accessible.cpp:185 has_focus = 0
+1501217474545	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1501217474731	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1501217474989	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1501217474995	addons.update-checker	WARN	Update manifest for malware-remediation@mozilla.org did not contain an updates property
+WARN  2017-07-28 14:14:12 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-28 14:52:14 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-28 15:01:09 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:28978): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:29064): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:29336): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+Performance warning: Async animation disabled because frame size (900, 1692) is bigger than the viewport (1547, 986) or the visual rectangle (900, 1692) is larger than the max allowable value (17895698) [div]
+WARN  2017-07-28 15:45:59 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:30001): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+console.error: 
+  Message: TypeError: this.doc is undefined
+  Stack:
+    Toolbox.prototype._updateFrames@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/toolbox.js:1580:9
+Toolbox.prototype._listFrames/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/toolbox.js:1555:7
+emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+Request.prototype.emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/client/main.js:1218:29
+DebuggerClient.prototype.onPacket/emitReply@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/client/main.js:1004:29
+DebuggerClient.prototype.onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/client/main.js:1006:9
+LocalDebuggerTransport.prototype.send/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:569:11
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+WARN  2017-07-28 16:00:10 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-28 16:10:26 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-28 16:18:59 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:31888): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-28 17:25:41 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+
+(process:32126): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:1784): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:3619): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(firefox:32022): Gtk-CRITICAL **: gtk_clipboard_set_with_data: assertion 'targets != NULL' failed
+
+(process:4492): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:21802): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:21939): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+1501307308229	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1501307308462	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1501307308600	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1501307308692	addons.update-checker	WARN	Update manifest for malware-remediation@mozilla.org did not contain an updates property
+
+(process:22067): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(unity-control-center:22157): Clutter-WARNING **: Whoever translated default:LTR did so wrongly.
+ERROR 2017-07-29 13:53:10 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-07-29 13:53:10 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x3912e10 at position 1. The row has probably been removed
+ERROR 2017-07-29 13:53:10 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x3912e10 holds a NULL value in row 1
+
+(unity-control-center:22267): Clutter-WARNING **: Whoever translated default:LTR did so wrongly.
+
+(unity-control-center:22299): Clutter-WARNING **: Whoever translated default:LTR did so wrongly.
+WARN  2017-07-29 14:00:36 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:22570): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-29 14:08:09 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 14:22:44 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 14:23:13 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 14:31:35 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 14:38:23 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 15:15:44 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 15:33:24 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:25675): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-29 16:15:25 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:25884): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:26111): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+[Parent 21719] WARNING: pipe error: 断开的管道: file /build/firefox-01C0AB/firefox-46.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 760
+
+(process:26486): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:28236): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-29 18:20:44 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 18:20:50 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 18:21:00 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 18:21:01 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:28639): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:28779): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:28861): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+ERROR 2017-07-29 18:53:05 unity.settings UnitySettings.cpp:293 Invalid monitor index: -1. Returning index 0 monitor instead.
+
+(process:29360): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-29 18:54:07 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:29610): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-29 19:02:39 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+WARN  2017-07-29 19:03:38 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus
+
+(process:29724): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-07-29 19:08:10 nux.inputmethod.ibus InputMethodIBus.cpp:67 Impossible to connect to connect to ibus

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--For IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="2To25_hbZ3dppDIimlSjcYCdJ70DrJGY3_X9TpY4NHQ" />
+    <meta name="theme-color" content="#f8f8f8">
+    <title>登录 - NJUST OnlineJudge</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="icon" sizes="192x192" href="/static/images/ICPC-Logo-Fishead.png">
+    
+
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <style>
+        #no-ie{z-index:9999;font-size:20px;font-family:"Microsoft Yahei",PMingLiu,Tahoma,Arial,Verdana,sans-serif;}
+        #no-ie a{color:#A9CE7C;text-decoration:none;font-weight:normal;}
+        #no-ie a:hover{text-decoration:underline;}
+        #no-ie .no-ie-content{background:#f0f0f0;text-align:center}
+        .noiecs{display:inline-block;background:url(http://lunax.u.qiniudn.com/csg-no-ie.png) no-repeat;vertical-align:middle}
+        .sprite-NoIE{background-position:0 0;width:20px;height:20px;}
+        .sprite-Opera{background-position:0 -25px;width:20px;height:20px;}
+        .sprite-chrome{background-position:0 -50px;width:20px;height:20px;}
+        .sprite-firefox{background-position:0 -75px;width:20px;height:20px;}
+    </style>
+    <![endif]-->
+<script data-no-instant>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?54e88e39af9228281665b00b750c8128";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script data-no-instant>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33574685-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+    
+    <style>
+        .inline_icon
+        {
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5em;
+        }
+        #back_icon{
+            color: #000000;
+            left: 0;
+        }
+        #back_icon:hover{color: #444444;}
+
+    </style>
+
+    
+    <!--[if lt IE 9]>
+    <div id="no-ie" style="visibility:visible;width:100%;height:40px;line-height:30px">
+        <div class="no-ie-content">
+            <a class="noiecs sprite-NoIE"></a><span>您正在使用较低版本的 IE 浏览网页，请升级到 <strong>IE 9 以上</strong> 或 <strong>使用其他符合标准的浏览器!</strong></span>
+            <a class="noiecs sprite-chrome"></a><a rel="nofollow" target="_blank" href="http://www.google.com/chrome/">Chrome</a>
+            <a class="noiecs sprite-firefox"></a><a rel="nofollow" target="_blank" href="http://www.mozilla.com/">Firefox</a>
+            <a class="noiecs sprite-Opera"></a><a rel="nofollow" target="_blank" href="http://www.opera.com/">Opera</a>
+        </div>
+    </div>
+    <![endif]-->
+    
+    
+<div class="container">
+    <h1 class="center-block text-center" style="max-width:400px;position: relative">
+        <a href="/"><span class="glyphicon glyphicon-home inline_icon" id="back_icon"></span></a>
+        NJUST OJ
+    </h1>
+    <div class="" id="view_login">
+        <form role="form" class="center-block"method="post" action="/Login/" style="max-width:400px">
+            <div class="clearfix">
+                <h4 class="pull-left">登录</h4>
+                <h4 class="pull-right">没有账号? <a id="show_register" href="/Register/">注册</a></h4>
+            </div>
+            <input type='hidden' name='csrfmiddlewaretoken' value='6LolImm8zdSKaRVDS7zrUyPUDnpzXD65' />
+            
+            <input type="hidden" name="redirect_to" value="/api/sms/unread/">
+            <div class="form-group">
+                <input type="text" class="form-control"name="username" value="" placeholder="用户名">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="密码">
+            </div>
+            <div class="form-group"><button type="submit" class="btn btn-primary btn-block">登陆</button></div>
+            
+        </form>
+    </div>
+    <div class="hidden" id="view_register">
+
+        <form class="center-block" method="POST" action="/Register/" style="max-width: 400px">
+            <div class="clearfix">
+                <h4 class="pull-left">注册</h4>
+                <h4 class="pull-right">已有账号? <a id="show_login" href="/Login/">登陆</a></h4>
+            </div>
+            <input type='hidden' name='csrfmiddlewaretoken' value='6LolImm8zdSKaRVDS7zrUyPUDnpzXD65' />
+            <input type="hidden" name="redirect_to" value="/api/sms/unread/">
+            <div class="form-group"><input class="form-control" type="text" name="username" value="" placeholder="用户名"></div>
+            
+            <div class="form-group"><input class="form-control" type="email" name="email" value="" placeholder="邮箱"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="密码"></div>
+            <div class="form-group"><input type="password" class="form-control" name="password_repeat" placeholder="重复密码"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">注册</button></div>
+        </form>
+    </div>
+</div>
+
+    
+    <script src="/static/js/require.js" data-no-instant></script>
+    <script type="text/javascript" data-no-instant>
+        require.config({
+            baseUrl: "/static/js/",
+            paths: {
+                "jquery": "jquery-1.11.0.min",
+                "vue": "vue",
+                "d3": "d3.min",
+                "cal-heatmap": "cal-heatmap",
+                "babel-core": "//cdn.bootcss.com/babel-core/5.8.34",
+                "nicEdit": "nicEdit"
+            },
+            shim: {
+                "cal-heatmap": {
+                    deps: ["d3"],
+                    exports: "CalHeatMap"
+                },
+                "nicEdit":{
+                    exports: "nicEditor"
+                }
+            }
+            // "packages": ["cal-heatmap"]
+
+        });
+    </script>
+    <script src="/static/js/jquery-1.11.0.min.js" data-no-instant></script>
+    <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="/static/js/jquery-1.11.0.min.js">\x3C/script>')</script>
+    <script data-no-instant>
+        // using jQuery
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+    </script>
+    <script src="/static/js/bootstrap.min.js" data-no-instant></script>
+    <!-- <script src="/static/js/d3.min.js" data-no-instant></script> -->
+    <!-- <script type="text/javascript" src="/static/js/vue.js"></script> -->
+    <!-- <script src="/static/js/cal-heatmap.js" data-no-instant></script> -->
+    
+    
+    <script>
+        $("#show_register,#show_login").click(function()
+        {
+            $("#view_login").toggleClass("hidden");
+            $("#view_register").toggleClass("hidden");
+            return false;
+        })
+    </script>
+
+    
+    
+</body>
+</html>
+}��(�w      Yy��Yy��>       =    :http://icpc.njust.edu.cn/Login/?redirect_to=/api/sms/unread/ necko:classified 1 request-method GET request-Cookie 3nSqS3XkC4M29HAMxjs7jQSxfXg= response-head HTTP/1.1 200 OK
+Server: nginx/1.10.2
+Date: Thu, 27 Jul 2017 09:35:55 GMT
+Content-Type: text/html; charset=utf-8
+Vary: Cookie
+Cache-Control: no-cache, private
+ uncompressed-len 0   !�

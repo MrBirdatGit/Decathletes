@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>论坛 -  Powered by Discuz!</title>
+
+<meta name="keywords" content="论坛" />
+<meta name="description" content="论坛 " />
+<meta name="generator" content="Discuz! X3.2" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2013 Comsenz Inc." />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="http://icpc.njust.edu.cn/Forum/" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_common.css?y0k" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_forum_index.css?y0k" /><script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'y0k', charset = 'utf-8', discuz_uid = '134986', cookiepre = 'kJUH_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,2|金钱|,3|贡献|', defaultstyle = '', REPORTURL = 'aHR0cDovL2ljcGMubmp1c3QuZWR1LmNuL0ZvcnVtL2ZvcnVtLnBocA==', SITEURL = 'http://icpc.njust.edu.cn/Forum/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="static/js/common.js?y0k" type="text/javascript"></script>
+<meta name="application-name" content="njustoj_bbs" />
+<meta name="msapplication-tooltip" content="njustoj_bbs" />
+<meta name="msapplication-task" content="name=门户;action-uri=http://icpc.njust.edu.cn/Forum/portal.php;icon-uri=http://icpc.njust.edu.cn/Forum/static/image/common/portal.ico" /><meta name="msapplication-task" content="name=论坛;action-uri=http://icpc.njust.edu.cn/Forum/forum.php;icon-uri=http://icpc.njust.edu.cn/Forum/static/image/common/bbs.ico" />
+<meta name="msapplication-task" content="name=群组;action-uri=http://icpc.njust.edu.cn/Forum/group.php;icon-uri=http://icpc.njust.edu.cn/Forum/static/image/common/group.ico" /><meta name="msapplication-task" content="name=家园;action-uri=http://icpc.njust.edu.cn/Forum/home.php;icon-uri=http://icpc.njust.edu.cn/Forum/static/image/common/home.ico" /><link rel="archives" title="njustoj_bbs" href="http://icpc.njust.edu.cn/Forum/archiver/" />
+<script src="static/js/forum.js?y0k" type="text/javascript"></script>
+<script src="static/js/portal.js?y0k" type="text/javascript"></script>
+</head>
+
+<body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="wp">
+<div class="z"><a href="javascript:;"  onclick="setHomepage('http://icpc.njust.edu.cn/Forum/');">设为首页</a><a href="http://icpc.njust.edu.cn/Forum/"  onclick="addFavorite(this.href, 'njustoj_bbs');return false;">收藏本站</a></div>
+<div class="y">
+<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
+<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到宽版" class="switchwidth">切换到宽版</a>
+<a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});">切换风格</a></div>
+</div>
+</div>
+
+<ul id="myprompt_menu" class="p_pop" style="display: none;">
+<li><a href="home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news_0"></em>消息</a></li>
+<li><a href="home.php?mod=follow&amp;do=follower"><em class="prompt_follower_0"></em>新听众</a></li>
+<li class="ignore_noticeli"><a href="javascript:;" onclick="setcookie('ignore_notice', 1);hideMenu('myprompt_menu')" title="暂不提醒"><em class="ignore_notice"></em></a></li>
+</ul>
+<div id="sslct_menu" class="cl p_pop" style="display: none;">
+<span class="sslct_btn" onclick="extstyle('')" title="默认"><i></i></span><span class="sslct_btn" onclick="extstyle('./template/default/style/t4')" title="紫"><i style='background:#9934B7'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t5')" title="蓝"><i style='background:#0053B9'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t1')" title="红"><i style='background:#BA350F'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t2')" title="青"><i style='background:#429296'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t3')" title="橙"><i style='background:#FE9500'></i></span>
+</div>
+<ul id="myitem_menu" class="p_pop" style="display: none;">
+<li><a href="forum.php?mod=guide&amp;view=my">帖子</a></li>
+<li><a href="home.php?mod=space&amp;do=favorite&amp;view=me">收藏</a></li>
+<li><a href="home.php?mod=space&amp;do=friend">好友</a></li>
+</ul>
+<div id="qmenu_menu" class="p_pop " style="display: none;">
+<ul class="cl nav"><li><a href="home.php?mod=space&do=friend" style="background-image:url(http://icpc.njust.edu.cn/Forum/static/image/feed/friend_b.png) !important">好友</a></li>
+<li><a href="forum.php?mod=guide&view=my" style="background-image:url(http://icpc.njust.edu.cn/Forum/static/image/feed/thread_b.png) !important">帖子</a></li>
+<li><a href="home.php?mod=space&do=favorite&view=me" style="background-image:url(http://icpc.njust.edu.cn/Forum/static/image/feed/favorite_b.png) !important">收藏</a></li>
+<li><a href="home.php?mod=magic" style="background-image:url(http://icpc.njust.edu.cn/Forum/static/image/feed/magic_b.png) !important">道具</a></li>
+<li><a href="home.php?mod=medal" style="background-image:url(http://icpc.njust.edu.cn/Forum/static/image/feed/medal_b.png) !important">勋章</a></li>
+<li><a href="home.php?mod=task" style="background-image:url(http://icpc.njust.edu.cn/Forum/static/image/feed/task_b.png) !important">任务</a></li>
+</ul>
+<div id="fjump_menu" class="btda"></div></div><div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="./" title="njustoj_bbs"><embed src="http://njoj.org/static/images/ICPC-Logo-Fishead.png" width="64" height="64" type="application/x-shockwave-flash" wmode="transparent"></embed></a></h2><div id="um">
+<div class="avt y"><a href="home.php?mod=space&amp;uid=134986"><img src="/Forum/uc_server/avatar.php?uid=134986&size=small" /></a></div>
+<p>
+<strong class="vwmy"><a href="home.php?mod=space&amp;uid=134986" target="_blank" title="访问我的空间">MrBird</a></strong>
+<span id="loginstatus">
+<a id="loginstatusid" href="member.php?mod=switchstatus" title="切换在线状态" onclick="ajaxget(this.href, 'loginstatus');return false;" class="xi2"></a>
+</span>
+<span class="pipe">|</span><a href="javascript:;" id="myitem" class="showmenu" onmouseover="showMenu({'ctrlid':'myitem'});">我的</a>
+<span class="pipe">|</span><a href="home.php?mod=spacecp">设置</a>
+<span class="pipe">|</span><a href="home.php?mod=space&amp;do=pm" id="pm_ntc">消息</a>
+<span class="pipe">|</span><a href="home.php?mod=space&amp;do=notice" id="myprompt" class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a><span id="myprompt_check"></span>
+<span class="pipe">|</span><a href="member.php?mod=logging&amp;action=logout&amp;formhash=044f13d6">退出</a>
+</p>
+<p>
+<a href="home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: 6030</a>
+<span class="pipe">|</span><a href="home.php?mod=spacecp&amp;ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this, showUpgradeinfo)">用户组: acm神牛</a>
+</p>
+</div>
+</div>
+
+<div id="nv">
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu();})">快捷导航</a>
+<ul><li class="a" id="mn_forum" ><a href="forum.php" hidefocus="true" title="BBS"  >论坛<span>BBS</span></a></li></ul>
+</div>
+<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+</div><div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="044f13d6" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="" />
+<input type="hidden" name="srhlocality" value="forum::index" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="scbar_icon_td"></td>
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="scbar_hot_td">
+<div id="scbar_hot">
+<strong class="xw1">热搜: </strong>
+
+<a href="search.php?mod=forum&amp;srchtxt=%E6%B4%BB%E5%8A%A8&amp;formhash=044f13d6&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">活动</a>
+
+
+
+<a href="search.php?mod=forum&amp;srchtxt=%E4%BA%A4%E5%8F%8B&amp;formhash=044f13d6&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">交友</a>
+
+
+
+<a href="search.php?mod=forum&amp;srchtxt=discuz&amp;formhash=044f13d6&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">discuz</a>
+
+</div>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="article">文章</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="blog">日志</a></li><li><a href="javascript:;" rel="album">相册</a></li><li><a href="javascript:;" rel="group">群组</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+</div>
+</div>
+
+
+<div id="wp" class="wp">
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">njustoj_bbs</a><em>&raquo;</em><a href="forum.php">论坛</a></div>
+<div class="z"></div>
+</div>
+
+
+
+<style id="diy_style" type="text/css"></style>
+
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="chart" class="bm bw0 cl">
+<p class="chart z">今日: <em>0</em><span class="pipe">|</span>昨日: <em>1</em><span class="pipe">|</span>帖子: <em>9737</em><span class="pipe">|</span>会员: <em>115</em><span class="pipe">|</span>欢迎新会员: <em><a href="home.php?mod=space&amp;username=chbug" target="_blank" class="xi2">chbug</a></em></p>
+<div class="y">
+<a href="forum.php?mod=guide&amp;view=my" title="我的帖子" class="xi2">我的帖子</a><span class="pipe">|</span><a href="forum.php?mod=guide&amp;view=new" title="最新回复" class="xi2">最新回复</a></div>
+</div>
+<!--[diy=diy_chart]--><div id="diy_chart" class="area"></div><!--[/diy]-->
+<div class="mn">
+
+
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div class="bm_h cl">
+<span class="o">
+<img id="category_1_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_1');" />
+</span>
+<h2><a href="forum.php?gid=1" style="">队内事务区</a></h2>
+</div>
+<div id="category_1" class="bm_c" style="">
+<table cellspacing="0" cellpadding="0" class="fl_tb">
+<tr><td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=2"><img src="static/image/common/forum.gif" alt="最新消息" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=2">最新消息</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">202</span><span class="xg1"> / 1396</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2164&amp;goto=lastpost#lastpost" class="xi2">CCSP特别训练报名帖</a> <cite><span title="2017-7-26 16:33">昨天&nbsp;16:33</span> <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=70"><img src="static/image/common/forum.gif" alt="队内管理规定" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=70">队内管理规定</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">122</span><span class="xg1"> / 501</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2049&amp;goto=lastpost#lastpost" class="xi2">今后训练计划——孙瑞培 ...</a> <cite>2016-12-27 18:04 <a href="home.php?mod=space&username=594753969">594753969</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=44"><img src="static/image/common/forum.gif" alt="RANK" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=44">RANK</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">190</span><span class="xg1"> / 548</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2156&amp;goto=lastpost#lastpost" class="xi2">2017暑假集训第一阶段—— 第八 ...</a> <cite>2017-7-1 21:15 <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=38"><img src="static/image/common/forum.gif" alt="南理工校赛" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=38">南理工校赛</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">11</span><span class="xg1"> / 15</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2123&amp;goto=lastpost#lastpost" class="xi2">集训队招新公告</a> <cite>2017-6-11 15:02 <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=88"><img src="static/image/common/forum.gif" alt="暑假集训" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=88">暑假集训</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">122</span><span class="xg1"> / 3361</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2157&amp;goto=lastpost#lastpost" class="xi2">2017多校训练账号分配对应表 ...</a> <cite>2017-7-3 16:58 <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+</tr>
+</table>
+</div>
+</div><div class="bm bmw  cl">
+<div class="bm_h cl">
+<span class="o">
+<img id="category_36_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_36');" />
+</span>
+<h2><a href="forum.php?gid=36" style="">交流区</a></h2>
+</div>
+<div id="category_36" class="bm_c" style="">
+<table cellspacing="0" cellpadding="0" class="fl_tb">
+<tr><td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=37"><img src="static/image/common/forum.gif" alt="心得总结" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=37">心得总结</a></h2>
+<p>子版块: <a href="forum.php?mod=forumdisplay&fid=50" >南邮校赛总结 2010-05-29</a>, <a href="forum.php?mod=forumdisplay&fid=73" >南京市第一届邀请赛</a>, <a href="forum.php?mod=forumdisplay&fid=84" >检讨专版</a></p></td>
+<td class="fl_i">
+<span class="xi2">428</span><span class="xg1"> / 1268</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2155&amp;goto=lastpost#lastpost" class="xi2">【李明龙 陈嘉骏 何俊杰 】第一 ...</a> <cite>2017-7-1 21:14 <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=93"><img src="static/image/common/forum.gif" alt="学长招聘" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=93">学长招聘</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">14</span><span class="xg1"> / 75</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2065&amp;goto=lastpost#lastpost" class="xi2">比赛+招聘贴</a> <cite>2017-2-23 15:19 <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=55"><img src="static/image/common/forum.gif" alt="OJ开发版" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=55">OJ开发版</a></h2>
+<p>版主: <span class="xi2"><a href="home.php?mod=space&username=lostcharlie" class="notabs" c="1">lostcharlie</a></span></p></td>
+<td class="fl_i">
+<span class="xi2">31</span><span class="xg1"> / 345</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2060&amp;goto=lastpost#lastpost" class="xi2">ZOJ 数据回滚造成的Authorizatio ...</a> <cite>2017-2-17 09:53 <a href="home.php?mod=space&username=shengrang">shengrang</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=74"><img src="static/image/common/forum.gif" alt="个人空间" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=74">个人空间</a></h2>
+<p>子版块: <a href="forum.php?mod=forumdisplay&fid=41" >dreamed</a>, <a href="forum.php?mod=forumdisplay&fid=42" >-_-</a>, <a href="forum.php?mod=forumdisplay&fid=46" >很低调，很淡定</a>, <a href="forum.php?mod=forumdisplay&fid=54" >森哥专用答疑版</a>, <a href="forum.php?mod=forumdisplay&fid=65" >Dancing Numbers</a>, <a href="forum.php?mod=forumdisplay&fid=87" >shangke7788</a></p></td>
+<td class="fl_i">
+<span class="xi2">108</span><span class="xg1"> / 242</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2094&amp;goto=lastpost#lastpost" class="xi2">llc日常灌水贴</a> <cite>2017-6-24 15:02 <a href="home.php?mod=space&username=Archger">Archger</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=47"><img src="static/image/common/forum.gif" alt="论坛BUG/建议版" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=47">论坛BUG/建议版</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">7</span><span class="xg1"> / 19</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1383&amp;goto=lastpost#lastpost" class="xi2">头像好像上传不了</a> <cite>2014-7-15 10:33 <a href="home.php?mod=space&username=lorry">lorry</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=39"><img src="static/image/common/forum.gif" alt="OJ Bug/建议版" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=39">OJ Bug/建议版</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">70</span><span class="xg1"> / 175</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1367&amp;goto=lastpost#lastpost" class="xi2">题目不能往下滚，只能往上滚 ...</a> <cite>2014-5-13 23:31 <a href="home.php?mod=space&username=whai">whai</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=72"><img src="static/image/common/forum.gif" alt="面试心得" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=72">面试心得</a></h2>
+<p class="xg2">所有面试心得都是老队员的心得总结，期望对每一届即将毕业的队员有一些帮助，希望找到所有的老队员（不管找工作还是读研的）都能在此留点东西，本版所有内容禁止外传。</p></td>
+<td class="fl_i">
+<span class="xi2">11</span><span class="xg1"> / 45</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=854&amp;goto=lastpost#lastpost" class="xi2">百度实习web前端笔试题</a> <cite>2016-11-14 16:22 <a href="home.php?mod=space&username=%E7%8C%AA%E5%96%BD%E5%96%BD">猪喽喽</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=89"><img src="static/image/common/forum.gif" alt="他山之石" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=89">他山之石</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">20</span><span class="xg1"> / 31</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2072&amp;goto=lastpost#lastpost" class="xi2">杭州电子科技大学招新通告 ...</a> <cite>2017-3-9 21:04 <a href="home.php?mod=space&username=fishhead">fishhead</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=52"><img src="static/image/common/forum.gif" alt="灌水区" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=52">灌水区</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">72</span><span class="xg1"> / 299</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2161&amp;goto=lastpost#lastpost" class="xi2">poj2509题</a> <cite><span title="2017-7-20 18:44">7&nbsp;天前</span> <a href="home.php?mod=space&username=Hurted_Issac">Hurted_Issac</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=82"><img src="static/image/common/forum.gif" alt="编程语言交流" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=82">编程语言交流</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">11</span><span class="xg1"> / 39</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1679&amp;goto=lastpost#lastpost" class="xi2">算法竞赛初级杂烩包(C++https:// ...</a> <cite>2015-9-4 21:39 <a href="home.php?mod=space&username=DATASOURCE">DATASOURCE</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=91"><img src="static/image/common/forum.gif" alt="自我介绍" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=91">自我介绍</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">47</span><span class="xg1"> / 261</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2160&amp;goto=lastpost#lastpost" class="xi2">自我介绍【孟祥煜】</a> <cite>2017-7-19 12:12 <a href="home.php?mod=space&username=Hurted_Issac">Hurted_Issac</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+</tr>
+</table>
+</div>
+</div><div class="bm bmw  cl">
+<div class="bm_h cl">
+<span class="o">
+<img id="category_51_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_51');" />
+</span>
+<h2><a href="forum.php?gid=51" style="">算法版块</a></h2>
+</div>
+<div id="category_51" class="bm_c" style="">
+<table cellspacing="0" cellpadding="0" class="fl_tb">
+<tr><td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=56"><img src="static/image/common/forum.gif" alt="图论" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=56">图论</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">74</span><span class="xg1"> / 108</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2070&amp;goto=lastpost#lastpost" class="xi2">网络流专题报告——by 韩小豪 ...</a> <cite>2017-3-7 22:11 <a href="home.php?mod=space&username=835124694">835124694</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=57"><img src="static/image/common/forum.gif" alt="数论" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=57">数论</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">44</span><span class="xg1"> / 74</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2124&amp;goto=lastpost#lastpost" class="xi2">数论报告——田鑫</a> <cite>2017-6-13 20:36 <a href="home.php?mod=space&username=starry2024">starry2024</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=58"><img src="static/image/common/forum.gif" alt="搜索" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=58">搜索</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">24</span><span class="xg1"> / 30</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1434&amp;goto=lastpost#lastpost" class="xi2">搜索专题报告——by Wild_Coder ...</a> <cite>2014-7-26 10:29 <a href="home.php?mod=space&username=bryant03">bryant03</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=59"><img src="static/image/common/forum.gif" alt="动态规划" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=59">动态规划</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">57</span><span class="xg1"> / 120</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2103&amp;goto=lastpost#lastpost" class="xi2">动态规划-LLC</a> <cite>2017-5-5 09:36 <a href="home.php?mod=space&username=Archger">Archger</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=60"><img src="static/image/common/forum.gif" alt="计算几何" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=60">计算几何</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">26</span><span class="xg1"> / 159</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1957&amp;goto=lastpost#lastpost" class="xi2">2016夏季集训 半平面交</a> <cite>2016-8-13 22:50 <a href="home.php?mod=space&username=Messy">Messy</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=61"><img src="static/image/common/forum.gif" alt="数据结构" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=61">数据结构</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">51</span><span class="xg1"> / 74</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2091&amp;goto=lastpost#lastpost" class="xi2">树上问题讨论</a> <cite>2017-4-19 17:04 <a href="home.php?mod=space&username=MrBird">MrBird</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=62"><img src="static/image/common/forum.gif" alt="字符串" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=62">字符串</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">17</span><span class="xg1"> / 57</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2105&amp;goto=lastpost#lastpost" class="xi2">后缀数组</a> <cite>2017-5-9 19:06 <a href="home.php?mod=space&username=chbug">chbug</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=69"><img src="static/image/common/forum.gif" alt="其他" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=69">其他</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">28</span><span class="xg1"> / 65</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2081&amp;goto=lastpost#lastpost" class="xi2">离线算法初步——GG</a> <cite>2017-4-4 22:20 <a href="home.php?mod=space&username=914106840227">914106840227</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+</tr>
+</table>
+</div>
+</div><div class="bm bmw  cl">
+<div class="bm_h cl">
+<span class="o">
+<img id="category_75_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_75');" />
+</span>
+<h2><a href="forum.php?gid=75" style="">解题报告</a></h2>
+</div>
+<div id="category_75" class="bm_c" style="">
+<table cellspacing="0" cellpadding="0" class="fl_tb">
+<tr><td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=92"><img src="static/image/common/forum.gif" alt="Contest" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=92">Contest</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">42</span><span class="xg1"> / 106</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=2163&amp;goto=lastpost#lastpost" class="xi2">2017多校一标程</a> <cite><span title="2017-7-25 23:43">前天&nbsp;23:43</span> <a href="home.php?mod=space&username=Vec">Vec</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=77"><img src="static/image/common/forum.gif" alt="POJ" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=77">POJ</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">92</span><span class="xg1"> / 101</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1441&amp;goto=lastpost#lastpost" class="xi2">3219——小学生的解题报告  判断 ...</a> <cite>2016-5-2 13:10 <a href="home.php?mod=space&username=early-youth">early-youth</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=76"><img src="static/image/common/forum.gif" alt="NJUSTOJ" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=76">NJUSTOJ</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">13</span><span class="xg1"> / 20</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=796&amp;goto=lastpost#lastpost" class="xi2">解题报告——古剑奇谭之分虫子 ...</a> <cite>2012-4-26 01:17 <a href="home.php?mod=space&username=zymyoo">zymyoo</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=78"><img src="static/image/common/forum.gif" alt="ZOJ" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=78">ZOJ</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">26</span><span class="xg1"> / 45</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1582&amp;goto=lastpost#lastpost" class="xi2">第12届浙江省赛题解</a> <cite>2015-5-3 22:23 <a href="home.php?mod=space&username=whai">whai</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=79"><img src="static/image/common/forum.gif" alt="HDU" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=79">HDU</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">0</span><span class="xg1"> / 0</span></td>
+<td class="fl_by">
+<div>
+从未
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=80"><img src="static/image/common/forum.gif" alt="CF&&TC" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=80">CF&&TC</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">16</span><span class="xg1"> / 52</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1749&amp;goto=lastpost#lastpost" class="xi2">Codeforces Round #330 (Div. 2) ...</a> <cite>2016-5-29 23:33 <a href="home.php?mod=space&username=Baileys">Baileys</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=81"><img src="static/image/common/forum.gif" alt="OTHERS" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=81">OTHERS</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">69</span><span class="xg1"> / 79</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=903&amp;goto=lastpost#lastpost" class="xi2">IPSC2012解题报告</a> <cite>2013-8-31 14:34 <a href="home.php?mod=space&username=withwind">withwind</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+<td class="fl_icn" >
+<a href="forum.php?mod=forumdisplay&fid=86"><img src="static/image/common/forum.gif" alt="WorldFinal" /></a>
+</td>
+<td>
+<h2><a href="forum.php?mod=forumdisplay&fid=86">WorldFinal</a></h2>
+</td>
+<td class="fl_i">
+<span class="xi2">9</span><span class="xg1"> / 27</span></td>
+<td class="fl_by">
+<div>
+<a href="forum.php?mod=redirect&amp;tid=1013&amp;goto=lastpost#lastpost" class="xi2">备份下当时出题的原始数据 ...</a> <cite>2012-7-28 08:33 <a href="home.php?mod=space&username=bobo0906">bobo0906</a></cite>
+</div>
+</td>
+</tr>
+<tr class="fl_row">
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="online" class="bm oll">
+<div class="bm_h">
+<span class="o"><a href="forum.php?showoldetails=no#online" title="收起/展开"><img src="static/image/common/collapsed_no.gif" alt="收起/展开" /></a></span>
+<h3>
+<strong><a href="home.php?mod=space&amp;do=friend&amp;view=online&amp;type=member">在线会员</a></strong>
+<span class="xs1">- <strong>4</strong> 人在线
+- <strong>1</strong> 会员(<strong>0</strong> 隐身),
+<strong>3</strong> 位游客
+- 最高记录是 <strong>1980</strong> 于 <strong>2014-7-27</strong>.</span>
+</h3>
+</div>
+<dl id="onlinelist" class="bm_c">
+<dt class="ptm pbm bbda"><img src="static/image/common/online_admin.gif" /> 管理员 &nbsp; &nbsp; &nbsp; <img src="static/image/common/online_supermod.gif" /> 超级版主 &nbsp; &nbsp; &nbsp; <img src="static/image/common/online_moderator.gif" /> 版主 &nbsp; &nbsp; &nbsp; <img src="static/image/common/online_member.gif" /> 会员 &nbsp; &nbsp; &nbsp; </dt>
+<dd class="ptm pbm">
+<ul class="cl">
+<li title="时间: 17:35">
+<img src="static/image/common/online_member.gif" alt="icon" />
+<a href="home.php?mod=space&amp;uid=134986">MrBird</a>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="bm lk">
+<div id="category_lk" class="bm_c ptm">
+<ul class="m mbn cl"><li class="lk_logo mbm bbda cl"><img src="static/image/common/logo_88_31.gif" border="0" alt="官方论坛" /><div class="lk_content z"><h5><a href="http://www.discuz.net" target="_blank">官方论坛</a></h5><p>提供最新 Discuz! 产品新闻、软件下载与技术交流</p></div></li></ul>
+<ul class="x mbm cl">
+<li><a href="http://www.comsenz.com" target="_blank" title="Comsenz">Comsenz</a></li><li><a href="http://www.manyou.com/" target="_blank" title="漫游平台">漫游平台</a></li><li><a href="http://www.yeswan.com" target="_blank" title="Yeswan">Yeswan</a></li><li><a href="http://www.5d6d.com/" target="_blank" title="我的领地">我的领地</a></li></ul>
+</div>
+</div>
+
+</div>
+
+</div>
+<script>fixed_top_nv();</script>	</div>
+<div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="javascript:;"  onclick="showWindow('miscreport', 'misc.php?mod=report&url='+REPORTURL);return false;">举报</a><span class="pipe">|</span><a href="forum.php?mod=misc&action=showdarkroom" >小黑屋</a><span class="pipe">|</span><a href="forum.php?mobile=yes" >手机版</a><span class="pipe">|</span><a href="archiver/" >Archiver</a><span class="pipe">|</span><strong><a href="http://icpc.njust.edu.cn/Forum/" target="_blank">njustoj_bbs</a></strong>
+&nbsp;<a href="http://discuz.qq.com/service/security" target="_blank" title="防水墙保卫网站远离侵害"><img src="static/image/common/security.png"></a></p>
+<p class="xs0">
+GMT+8, 2017-7-27 17:36<span id="debuginfo">
+, Processed in 0.052209 second(s), 12 queries
+.
+</span>
+</p>
+</div>
+<div id="frt">
+<p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>X3.2</em></p>
+<p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a></p>
+</div><script type="text/javascript">
+var invisiblestatus = '在线';
+var loginstatusobj = $('loginstatusid');
+if(loginstatusobj != undefined && loginstatusobj != null) loginstatusobj.innerHTML = invisiblestatus;
+</script>
+</div>
+<script src="home.php?mod=spacecp&ac=pm&op=checknewpm&rand=1501148165" type="text/javascript"></script>
+<div class="focus plugin" id="ip_notice"></div>
+<script type="text/javascript">ipNotice();</script>
+<div id="scrolltop">
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+			<div id="discuz_tips" style="display:none;"></div>
+			<script type="text/javascript">
+				var tipsinfo = '34649317|X3.2|0.6||0||134986|15|1501148165|82590daf6ecc99cc0f65937cc9d49f4e|2';
+			</script>
+			<script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script></body>
+</html>
+��2a�           Yy�>
+       )    :http://icpc.njust.edu.cn/Forum/forum.php request-method GET response-head HTTP/1.1 200 OK
+Server: nginx/1.10.2
+Date: Thu, 27 Jul 2017 09:36:05 GMT
+Content-Type: text/html; charset=utf-8
+X-Powered-By: PHP/5.4.16
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 15 predictor::http://icpc.njust.edu.cn/Forum/data/cache/style_1_common.css?y0k 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/data/cache/style_1_forum_index.css?y0k 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/static/js/common.js?y0k 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/static/js/forum.js?y0k 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/static/js/portal.js?y0k 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/uc_server/avatar.php?uid=134986&size=small 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/home.php?mod=spacecp&ac=pm&op=checknewpm&rand=1501148165 1,1,0,0 predictor::http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1 1,1,0,0 predictor::http://202.119.84.52/Forum/static/image/common/switch_style.png 1,1,0,0 predictor::http://202.119.84.52/Forum/static/image/common/user_online.gif 1,1,0,0 predictor::http://202.119.84.52/Forum/static/image/common/arrwd.gif 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/static/js/ajax.js?y0k 1,1,0,0 predictor::http://icpc.njust.edu.cn/Forum/static/js/common_extra.js?y0k 1,1,0,0 predictor::http://cp.discuz.qq.com/tips/get?rand=2717&s_id=34649317&product_version=X3.2&product_release=&fix_bug=&is_founder=&s_url=http%3A%2F%2Ficpc.njust.edu.cn%2FForum%2F&last_send_time=&ts=1501148165&sig=82590daf6ecc99cc0f65937cc9d49f4e&admin_id=0&group_id=15&open_id=&uid=134986&callback=discuzTipsCallback 1,1,0,0 predictor::http://202.119.84.52/Forum/static/image/common/popupcredit_bg.gif 1,1,0,0   �y

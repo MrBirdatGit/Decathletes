@@ -1,0 +1,87 @@
+gnome-session-binary[28493]: WARNING: Could not get session id for session. Check that logind is properly installed and pam_systemd is getting used at login.
+gnome-keyring-daemon: error getting process capabilities, aborting
+gnome-keyring-daemon: error getting process capabilities, aborting
+gnome-session-binary[28493]: WARNING: App 'gnome-keyring-pkcs11.desktop' exited with code 1
+gnome-session-binary[28493]: WARNING: App 'gnome-keyring-ssh.desktop' exited with code 1
+gnome-keyring-daemon: error getting process capabilities, aborting
+gnome-session-binary[28493]: WARNING: App 'gnome-keyring-secrets.desktop' exited with code 1
+没有“org.mate.screensaver”这个方案
+没有“apps.light-locker”这个方案
+没有“apps.light-locker”这个方案
+没有“apps.light-locker”这个方案
+没有“apps.light-locker”这个方案
+
+(process:28675): indicator-application-service-WARNING **: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+
+(process:28675): indicator-application-service-WARNING **: Name Lost
+
+(polkit-gnome-authentication-agent-1:28672): polkit-gnome-1-WARNING **: Unable to determine the session we are in: No session for pid 28672
+Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+Nautilus-Share-Message: Called "net usershare info" but it failed: “net usershare”返回错误 255：mkdir failed on directory /var/run/samba/msg.lock: 权限不够
+net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 没有那个文件或目录
+Please ask your system administrator to enable user sharing.
+
+Nautilus-Share-Message: Called "net usershare info" but it failed: “net usershare”返回错误 255：mkdir failed on directory /var/run/samba/msg.lock: 权限不够
+net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 没有那个文件或目录
+Please ask your system administrator to enable user sharing.
+
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+gnome-session-binary[28493]: GLib-GIO-CRITICAL: g_dbus_connection_call_internal: assertion 'object_path != NULL && g_variant_is_object_path (object_path)' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: “net usershare”返回错误 255：mkdir failed on directory /var/run/samba/msg.lock: 权限不够
+net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 没有那个文件或目录
+Please ask your system administrator to enable user sharing.
+
+Nautilus-Share-Message: Called "net usershare info" but it failed: “net usershare”返回错误 255：mkdir failed on directory /var/run/samba/msg.lock: 权限不够
+net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 没有那个文件或目录
+Please ask your system administrator to enable user sharing.
+
+Nautilus-Share-Message: Called "net usershare info" but it failed: “net usershare”返回错误 255：mkdir failed on directory /var/run/samba/msg.lock: 权限不够
+net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 没有那个文件或目录
+Please ask your system administrator to enable user sharing.
+

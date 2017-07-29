@@ -1,0 +1,308 @@
+Activating service name='org.ayatana.bamf'
+Activating service name='org.a11y.Bus'
+Successfully activated service 'org.a11y.Bus'
+Activating service name='org.a11y.atspi.Registry'
+
+** (process:28394): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+Activating service name='org.gtk.vfs.Daemon'
+Successfully activated service 'org.a11y.atspi.Registry'
+Successfully activated service 'org.gtk.vfs.Daemon'
+Successfully activated service 'org.ayatana.bamf'
+Activating service name='ca.desrt.dconf'
+Successfully activated service 'ca.desrt.dconf'
+Activating service name='org.gnome.ScreenSaver'
+
+** (gnome-screensaver:28515): WARNING **: Couldn't get presence status: The name org.gnome.SessionManager was not provided by any .service files
+Successfully activated service 'org.gnome.ScreenSaver'
+Activating service name='org.freedesktop.Notifications'
+Successfully activated service 'org.freedesktop.Notifications'
+Activating service name='org.gnome.evolution.dataserver.Sources5'
+Activated service 'org.gnome.evolution.dataserver.Sources5' failed: Failed to execute program org.gnome.evolution.dataserver.Sources5: No such file or directory
+Activating service name='org.gtk.vfs.UDisks2VolumeMonitor'
+Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+Activating service name='org.gtk.vfs.GPhoto2VolumeMonitor'
+Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+Activating service name='org.gtk.vfs.MTPVolumeMonitor'
+Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+Activating service name='org.gtk.vfs.AfcVolumeMonitor'
+Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+Activating service name='org.gtk.vfs.GoaVolumeMonitor'
+Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+Activating service name='org.freedesktop.FileManager1'
+** Message: Lost the name, shutting down.
+
+(nautilus:28748): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+
+(nautilus:28748): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+无法注册应用程序: Unable to acquire bus name 'org.gnome.Nautilus'
+Activated service 'org.freedesktop.FileManager1' failed: Process org.freedesktop.FileManager1 exited with status 1
+Activating service name='org.gtk.vfs.Metadata'
+Successfully activated service 'org.gtk.vfs.Metadata'
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Activating service name='org.gnome.GConf'
+Successfully activated service 'org.gnome.GConf'
+Successfully activated service 'org.gnome.Terminal'
+Activating service name='org.gnome.zeitgeist.Engine'
+
+** (process:28826): WARNING **: zeitgeist-vacuum.vala:38: Impossible to open database `/tmp/guest-s838c8/.local/share/zeitgeist/activity.sqlite': unable to open database file
+Activating service name='org.gnome.zeitgeist.SimpleIndexer'
+Successfully activated service 'org.gnome.zeitgeist.Engine'
+
+** (zeitgeist-datahub:28836): WARNING **: zeitgeist-datahub.vala:229: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+** Message: Index must be upgraded. Doing full rebuild
+Successfully activated service 'org.gnome.zeitgeist.SimpleIndexer'
+
+** (zeitgeist-fts:28835): WARNING **: Unable to get info on application://zeitgeist-datahub.desktop
+
+** (zeitgeist-fts:28835): WARNING **: Unable to get info on application://gcalctool.desktop
+
+(gnome-terminal-server:28790): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+** (process:28873): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: 后端不支持的操作
+
+** (process:28896): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: 后端不支持的操作
+Activating service name='com.canonical.Unity.Scope.Home'
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (4 vs 8)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (14 vs 28)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (2 vs 4)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (18 vs 36)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (3 vs 6)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+Successfully activated service 'com.canonical.Unity.Scope.Home'
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (14 vs 28)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (2 vs 4)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (3 vs 6)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (14 vs 28)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (2 vs 4)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (14 vs 28)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (2 vs 4)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (3 vs 6)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (3 vs 6)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+Activating service name='com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.LocalFiles'
+
+(process:29041): unity-files-daemon-WARNING **: folder.vala:65: Failed to read favorites: 打开文件“/tmp/guest-s838c8/.config/gtk-3.0/bookmarks”失败：没有那个文件或目录
+Successfully activated service 'com.canonical.Unity.Scope.LocalFiles'
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (4 vs 8)
+Successfully activated service 'com.canonical.Unity.Scope.Applications'
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (14 vs 28)
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (2 vs 4)
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (18 vs 36)
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (3 vs 6)
+
+(unity-scope-loader:29039): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(gnome-terminal-server:28790): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+
+** (zeitgeist-fts:28835): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (18 vs 36)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (18 vs 36)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (7 vs 14)
+
+(unity-scope-home:29026): libunity-protocol-private-WARNING **: protocol-scope-discovery.vala:543: Number of elements of OptionIDs doesn't match OptionNames (18 vs 36)
+Activating service name='com.canonical.Unity.Scope.Music'
+Successfully activated service 'com.canonical.Unity.Scope.Music'
+
+(unity-music-daemon:31040): unity-music-daemon-WARNING **: rhythmbox-collection.vala:510: Unable to open album-art DB!
+
+(unity-music-daemon:31040): unity-music-daemon-WARNING **: rhythmbox-collection.vala:574: Error while parsing rhythmbox DB: 打开文件时出错：没有那个文件或目录
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='com.ubuntu.SoftwareCenterDataProvider'
+Successfully activated service 'com.ubuntu.SoftwareCenterDataProvider'
+Activating service name='org.freedesktop.Geoclue.Master'
+Successfully activated service 'org.freedesktop.Geoclue.Master'
+** Message: GSettings key 'gps-baudrate' initialised to '0'
+** Message: GSettings key 'gps-device' initialised to '(null)'
+Activating service name='org.freedesktop.Geoclue.Providers.UbuntuGeoIP'
+Successfully activated service 'org.freedesktop.Geoclue.Providers.UbuntuGeoIP'
+No handlers could be found for logger "softwarecenter.region"
+2017-07-27 15:13:35,173 - softwarecenter.db.update - WARNING - failed to load file /var/lib/apt-xapian-index/cataloged_times.p: unsupported pickle protocol: 3
+Activating service name='com.ubuntu.sso'
+/usr/lib/python2.7/dist-packages/gi/overrides/GLib.py:573: Warning: Source ID 25 was not found when attempting to remove it
+  super(MainLoop, self).run()
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.secrets'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.freedesktop.secrets' failed: Process org.freedesktop.secrets exited with status 1
+2017-07-27 15:13:43,491 - softwarecenter.backend.login_impl.login_sso - ERROR - _on_credentials_error for Ubuntu One: dbus.Dictionary({dbus.String(u'errtype'): dbus.String(u'DBusException'), dbus.String(u'message'): dbus.String(u'Process org.freedesktop.secrets exited with status 1')}, signature=dbus.Signature('ss')) ()
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+
+(gnome-terminal-server:1214): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:1214): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:1214): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:1214): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+
+** (process:28732): WARNING **: send_done_cb: 在路径 org.gtk.vfs.Enumerator 的对象上没有 /org/gtk/vfs/client/enumerator/20 接口 (g-dbus-error-quark, 19)
+
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='com.ubuntu.SoftwareCenterDataProvider'
+Successfully activated service 'com.ubuntu.SoftwareCenterDataProvider'
+No handlers could be found for logger "softwarecenter.db.update"
+2017-07-29 13:53:06,594 - softwarecenter.db.update - WARNING - failed to load file /var/lib/apt-xapian-index/cataloged_times.p: unsupported pickle protocol: 3
+/usr/lib/python2.7/dist-packages/debtagshw/detectors.py:31: PyGIWarning: GUdev was imported without specifying a version first. Use gi.require_version('GUdev', '1.0') before import to ensure that the right version gets loaded.
+  from gi.repository import GUdev
+Activating service name='com.ubuntu.sso'
+/usr/lib/python2.7/dist-packages/gi/overrides/GLib.py:573: Warning: Source ID 23 was not found when attempting to remove it
+  super(MainLoop, self).run()
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.secrets'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.freedesktop.secrets' failed: Process org.freedesktop.secrets exited with status 1
+2017-07-29 13:53:27,099 - softwarecenter.backend.login_impl.login_sso - ERROR - _on_credentials_error for Ubuntu One: dbus.Dictionary({dbus.String(u'errtype'): dbus.String(u'DBusException'), dbus.String(u'message'): dbus.String(u'Process org.freedesktop.secrets exited with status 1')}, signature=dbus.Signature('ss')) ()
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.Terminal'
+Successfully activated service 'org.gnome.Terminal'
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+
+(gnome-terminal-server:22402): Gdk-WARNING **: Event with type 8 not holding a GdkDevice. It is most likely synthesized outside Gdk/GTK+
+
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+
+** (process:28732): WARNING **: send_done_cb: 在路径 org.gtk.vfs.Enumerator 的对象上没有 /org/gtk/vfs/client/enumerator/2 接口 (g-dbus-error-quark, 19)
+
+
+(unity-files-daemon:29041): unity-files-daemon-WARNING **: folder.vala:65: Failed to read favorites: 打开文件“/tmp/guest-s838c8/.config/gtk-3.0/bookmarks”失败：没有那个文件或目录
+
+(unity-files-daemon:29041): unity-files-daemon-WARNING **: folder.vala:65: Failed to read favorites: 打开文件“/tmp/guest-s838c8/.config/gtk-3.0/bookmarks”失败：没有那个文件或目录
+
+** (process:28732): WARNING **: send_done_cb: 在路径 org.gtk.vfs.Enumerator 的对象上没有 /org/gtk/vfs/client/enumerator/3 接口 (g-dbus-error-quark, 19)
+
+
+** (process:28732): WARNING **: send_done_cb: 在路径 org.gtk.vfs.Enumerator 的对象上没有 /org/gtk/vfs/client/enumerator/25 接口 (g-dbus-error-quark, 19)
+
+
+** (zeitgeist-fts:28835): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (process:28732): WARNING **: send_done_cb: 在路径 org.gtk.vfs.Enumerator 的对象上没有 /org/gtk/vfs/client/enumerator/29 接口 (g-dbus-error-quark, 19)
+
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1
+Activating service name='org.gnome.keyring'
+gnome-keyring-daemon: error getting process capabilities, aborting
+Activated service 'org.gnome.keyring' failed: Process org.gnome.keyring exited with status 1

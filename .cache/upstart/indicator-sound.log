@@ -1,2 +1,0 @@
-
-(process:28565): indicator-sound-WARNING **: volume-control-pulse.vala:744: Unable to connect to dbus server at 'unix:path=/run/user/986/pulse/dbus-socket': 无法连接： 没有那个文件或目录

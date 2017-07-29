@@ -1,2 +1,0 @@
-gpg-agent stop/pre-start, process 28323
-gpgconf: warning: can not open config file /tmp/guest-s838c8/.gnupg/gpg-agent.conf: 没有那个文件或目录

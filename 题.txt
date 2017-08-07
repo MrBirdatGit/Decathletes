@@ -1,0 +1,14 @@
+http://codeforces.com/contest/833/problem/B
+http://codeforces.com/contest/830/problem/C
+http://codeforces.com/contest/830/problem/D
+http://codeforces.com/contest/755/problem/F
+http://codeforces.com/contest/813/problem/E
+http://codeforces.com/contest/835/problem/E
+http://ifrog.cc/acm/problem/1152
+http://acm.hdu.edu.cn/showproblem.php?pid=6052
+http://acm.hdu.edu.cn/showproblem.php?pid=6059
+http://acm.hdu.edu.cn/showproblem.php?pid=6065
+http://acm.hdu.edu.cn/showproblem.php?pid=6068
+http://acm.hdu.edu.cn/showproblem.php?pid=6070
+http://acm.hdu.edu.cn/showproblem.php?pid=6071
+http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=774&pid=1005

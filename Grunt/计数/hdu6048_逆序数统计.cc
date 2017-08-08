@@ -1,3 +1,6 @@
+//判断某种类似华容道的游戏能否复原
+//结论：能否复原只依赖于逆序数
+//计逆序数考虑每个数后面有多少个比它小的即可
 #include <bits/stdc++.h>
 using namespace std;
 int n,m,p;

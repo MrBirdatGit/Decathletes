@@ -47,9 +47,8 @@ void update(int last,int &x,int l,int r,int p){
 }
 int query(int ll,int rr,int l,int r,int p){
 	if(l == r){
-		return cnt[rr] - cnt[ll];	
+		return cnt[rr] - cnt[ll];
 	}
-	int ret = 0;
 	int m = (l+r)>>1;
 	if(p <= m) return query(ls[ll],ls[rr],l,m,p);
 	else return cnt[ls[rr]] - cnt[ls[ll]] + query(rs[ll],rs[rr],m+1,r,p);
@@ -62,41 +61,46 @@ void print(int x,int l,int r){
 	print(rs[x],m+1,r);
 }
 void init(){
-	tot = etot = clk = 0;
+	tot = tote = clk = 0;
 	memset(head,0,sizeof(head));
 }
 int last[maxn<<1];
 int main(){
-	int n,u,v;
-	scanf("%d",&n);
-	init();
-	for(int i = 1;i<=n;i++)
-		scanf("%d",a+i);
-	for(int i = 1;i<n;i++){
-		scanf("%d%d",&u,&v);
-		addedge(u,v);
-		addedge(v,u);
-	}	
-	dfs(1,0);
-	build(rt[0],0,tot);
-	/*for(int i = 1;i<=clk;i++){
-		cout<<vis[i]<<' ';
-	}cout<<endl;
-	for(int i = 1;i<=clk;i++){
-		cout<<val[i]<<' ';
-	}cout<<endl;*/
-	for(int i  = 1;i<=clk;i++){
-		update(rt[i-1],rt[i],0,clk,last[val[i]]);
-		last[val[i]] = i;
-	}
-	/*for(int i = 1;i<=n;i++){
-		printf("%d %d %d\n",i,bg[i],ed[i]);
-		printf("%d\n",query(rt[bg[i]-1],rt[ed[i]],0,clk,bg[i]-1));
-	}*/
-	int q;
-	scanf("%d",&q);
-	while(q--){
-		scanf("%d",&u);
-		printf("%d\n",query(rt[bg[u]-1],rt[ed[u]],0,clk,bg[u]-1));
+	int T;
+	scanf("%d",&T);
+	while(T--){
+		int n,u,v;
+		scanf("%d",&n);
+		init();
+		for(int i = 1;i<=n;i++)
+			scanf("%d",a+i);
+		for(int i = 1;i<n;i++){
+			scanf("%d%d",&u,&v);
+			addedge(u,v);
+			addedge(v,u);
+		}
+		dfs(1,0);
+		build(rt[0],0,tot);
+		/*for(int i = 1;i<=clk;i++){
+		  cout<<vis[i]<<' ';
+		  }cout<<endl;
+		  for(int i = 1;i<=clk;i++){
+		  cout<<val[i]<<' ';
+		  }cout<<endl;*/
+		for(int i  = 1;i<=clk;i++){
+			update(rt[i-1],rt[i],0,clk,last[val[i]]);
+			last[val[i]] = i;
+		}
+		/*for(int i = 1;i<=n;i++){
+		  printf("%d %d %d\n",i,bg[i],ed[i]);
+		  printf("%d\n",query(rt[bg[i]-1],rt[ed[i]],0,clk,bg[i]-1));
+		  }*/
+		int q;
+		scanf("%d",&q);
+		while(q--){
+			scanf("%d",&u);
+			printf("%d\n",query(rt[bg[u]-1],rt[ed[u]],0,clk,bg[u]-1));
+		}
 	}
 }
+

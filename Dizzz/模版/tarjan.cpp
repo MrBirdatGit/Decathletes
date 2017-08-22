@@ -1,9 +1,9 @@
 int head[maxn],tot;
 struct edge{
-    int to,next;
+    int v,next;
 }e[maxm];
 void addedge(int u,int v){
-    e[tot].to = v;
+    e[tot].v = v;
     e[tot].next = head[u];
     head[u] = tot++;
 }
@@ -21,7 +21,7 @@ void Tarjan(int u){
     stk[top++] = u;
     ins[u] = 1;
     for(int i = head[u];i!=-1;i=e[i].next){
-        int v = e[i].to;
+        int v = e[i].v;
         if(!dfn[v]){
             Tarjan(v);
             low[u] = min(low[u],low[v]);

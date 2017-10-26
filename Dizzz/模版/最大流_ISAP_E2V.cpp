@@ -1,40 +1,34 @@
-#include<iostream>
-#include<cstring>
-#include<cstdlib>
-#include<cstdio>
-#include<cmath>
-#include<algorithm>
-const int MAXN = 100010;//点数的最大值
-const int MAXM = 400010;//边数的最大值
+const int maxn = 100010;//点数的最大值
+const int maxm = 400010;//边数的最大值
 const int INF = 0x3f3f3f3f;
-struct Edge {
+struct edge {
 	int to, next, cap, flow;
-}edge[MAXM];//注意是MAXM
+}e[maxm];
 int tol;
-int head[MAXN];
-int gap[MAXN], dep[MAXN], cur[MAXN];
+int head[maxn];
+int gap[maxn], dep[maxn], cur[maxn];
 void init() {
 	tol = 0;
 	memset(head, -1, sizeof(head));
 }
 void addedge(int u, int v, int w, int rw = 0) {
-	edge[tol].to = v; edge[tol].cap = w; edge[tol].flow = 0;
-	edge[tol].next = head[u]; head[u] = tol++;
-	edge[tol].to = u; edge[tol].cap = rw; edge[tol].flow = 0;
-	edge[tol].next = head[v]; head[v] = tol++;
+	e[tol].to = v; e[tol].cap = w; e[tol].flow = 0;
+	e[tol].next = head[u]; head[u] = tol++;
+	e[tol].to = u; e[tol].cap = rw; e[tol].flow = 0;
+	e[tol].next = head[v]; head[v] = tol++;
 }
-int Q[MAXN];
-void BFS(int start, int end) {
+int Q[maxn];
+void bfs(int s, int t) {
 	memset(dep, -1, sizeof(dep));
 	memset(gap, 0, sizeof(gap));
 	gap[0] = 1;
 	int front = 0, rear = 0;
-	dep[end] = 0;
-	Q[rear++] = end;
+	dep[t] = 0;
+	Q[rear++] = t;
 	while (front != rear) {
 		int u = Q[front++];
-		for (int i = head[u]; i != -1; i = edge[i].next) {
-			int v = edge[i].to;
+		for (int i = head[u]; i != -1; i = e[i].next) {
+			int v = e[i].to;
 			if (dep[v] != -1)continue;
 			Q[rear++] = v;
 			dep[v] = dep[u] + 1;
@@ -42,36 +36,36 @@ void BFS(int start, int end) {
 		}
 	}
 }
-int S[MAXN];
-int sap(int start, int end, int N) {
-	BFS(start, end);
+int S[maxn];
+int sap(int s, int t, int N) {
+	bfs(s, t);
 	memcpy(cur, head, sizeof(head));
 	int top = 0;
-	int u = start;
+	int u = s;
 	int ans = 0;
-	while (dep[start] < N) {
-		if (u == end) {
+	while (dep[s] < N) {
+		if (u == t) {
 			int Min = INF;
 			int inser;
 			for (int i = 0; i < top; i++)
-				if (Min > edge[S[i]].cap - edge[S[i]].flow) {
-					Min = edge[S[i]].cap - edge[S[i]].flow;
+				if (Min > e[S[i]].cap - e[S[i]].flow) {
+					Min = e[S[i]].cap - e[S[i]].flow;
 					inser = i;
 				}
 			for (int i = 0; i < top; i++) {
-				edge[S[i]].flow += Min;
-				edge[S[i] ^ 1].flow -= Min;
+				e[S[i]].flow += Min;
+				e[S[i] ^ 1].flow -= Min;
 			}
 			ans += Min;
 			top = inser;
-			u = edge[S[top] ^ 1].to;
+			u = e[S[top] ^ 1].to;
 			continue;
 		}
 		bool flag = false;
 		int v;
-		for (int i = cur[u]; i != -1; i = edge[i].next) {
-			v = edge[i].to;
-			if (edge[i].cap - edge[i].flow && dep[v] + 1 == dep[u]) {
+		for (int i = cur[u]; i != -1; i = e[i].next) {
+			v = e[i].to;
+			if (e[i].cap - e[i].flow && dep[v] + 1 == dep[u]) {
 				flag = true;
 				cur[u] = i;
 				break;
@@ -83,16 +77,16 @@ int sap(int start, int end, int N) {
 			continue;
 		}
 		int Min = N;
-		for (int i = head[u]; i != -1; i = edge[i].next)
-			if (edge[i].cap - edge[i].flow && dep[edge[i].to] < Min) {
-				Min = dep[edge[i].to];
+		for (int i = head[u]; i != -1; i = e[i].next)
+			if (e[i].cap - e[i].flow && dep[e[i].to] < Min) {
+				Min = dep[e[i].to];
 				cur[u] = i;
 			}
 		gap[dep[u]]--;
 		if (!gap[dep[u]])return ans;
 		dep[u] = Min + 1;
 		gap[dep[u]]++;
-		if (u != start) u = edge[S[--top] ^ 1].to;
+		if (u != s) u = e[S[--top] ^ 1].to;
 	}
 	return ans;
 }
@@ -100,11 +94,11 @@ int main() {
 	int n, m, u, v, cost;
 	while (~scanf("%d%d", &n, &m)) {
 		init();
-		for (int i = 0; i<n; i++) {
+		for (int i = 0; i<m; i++) {
 			scanf("%d%d%d", &u, &v, &cost);
 			addedge(u, v, cost);
 		}
-		printf("%d\n", sap(1, m, m));
+		printf("%d\n", sap(1, n, n));
 	}
 	return 0;
 }

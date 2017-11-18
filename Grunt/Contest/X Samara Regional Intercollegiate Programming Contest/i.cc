@@ -2,10 +2,6 @@
 using namespace std;
 typedef long long ll;
 const int mod=1e9+7;
-ll mult(ll x, ll y, ll mod){
-	ll tmp=(x*y-(ll)((long double)x/mod*y)*mod);
-	return tmp<0?tmp+mod:tmp;
-}
 
 ll a[1050][1050];
 ll b[1050][1050];

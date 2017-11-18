@@ -198,69 +198,6 @@ void fft(complex y[],int len,int on)
 		for(int j = 0;j < len;j+=h)
 		{
 			complex w(1,0);
-//bzoj1010
-//决策单调性
-//
-//P教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。P教授有编号为1…N的N件玩具，第i件玩具经过压缩后变成一维长度为Ci.为了方便整理，P教授要求在一个一维容器中的玩具编号是连续的。同时如果一个一维容器中有多个玩具，那么两件玩具之间要加入一个单位长度的填充物，形式地说如果将第i件玩具到第j个玩具放到一个容器中，那么容器的长度将为 x=j-i+Sigma(Ck) i<=K<=j 制作容器的费用与容器的长度有关，根据教授研究，如果容器长度为x,其制作费用为(X-L)^2.其中L是一个常量。P教授不关心容器的数目，他可以制作出任意长度的容器，甚至超过L。但他希望费用最小.
-//
-//input
-//5 4
-//3
-//4
-//2
-//1
-//4
-//
-//output
-//1
-//
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-const int maxn=50005;
-ll a[maxn], s[maxn], dp[maxn], l;
-int n;
-struct node{
-	int l, r, p;
-}q[maxn];
-ll cal(int j, int i){
-	return dp[j]+(s[i]-s[j]+i-j-1-l)*(s[i]-s[j]+i-j-1-l);
-}
-int bisearch(node a, int i){
-	int l=a.l, r=a.r+1, tag=0;//这里我的二分默认在l到r之间有答案的, 而实际上有可能a.r并不满足, 所以把区间右端点+1
-	while(l<=r){
-		if(r-l<=1){
-			if(cal(i, l)<cal(a.p, l))tag=l;
-			else tag=r;
-			break;
-		}
-		int mid=l+r>>1;
-		if(cal(i, mid)<cal(a.p, mid))r=mid;
-		else l=mid;
-	}
-	return tag;
-}
-void solve(){
-	int head=1, tail=0;
-	q[++tail]=(node){0, n, 0};
-	for(int i=1;i<=n;i++){
-		if(i>q[head].r)head++;
-		dp[i]=cal(q[head].p, i);
-		/*for(int i=head;i<=tail;i++){
-				printf("node %d %d %d\n", q[i].l, q[i].r, q[i].p);
-			}
-		cout<<i<<' '<<q[head].p<<' '<<dp[i]<<endl;*/
-		if(head>tail||cal(i, n)<cal(q[tail].p, n)){
-			while(head<=tail&&cal(i, q[tail].l)<cal(q[tail].p, q[tail].l))tail--;
-			if(head<=tail){
-				int t=bisearch(q[tail], i);
-				q[tail].r=t-1;
-				q[++tail]=(node){t, n, i};
-			}
-			else q[++tail]=(node){i, n, i};
-		}
-	}
-}
 int main(){
 	scanf("%d%lld", &n, &l);
 	for(ll i=1;i<=n;i++){
@@ -340,79 +277,6 @@ const long long P=50000000001507329LL; // 190734863287 * 2 ^ 18 + 1
 const int G=3;
 
 long long mul(long long x,long long y)
-//bzoj1010
-//决策单调性
-//
-//P教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。P教授有编号为1…N的N件玩具，第i件玩具经过压缩后变成一维长度为Ci.为了方便整理，P教授要求在一个一维容器中的玩具编号是连续的。同时如果一个一维容器中有多个玩具，那么两件玩具之间要加入一个单位长度的填充物，形式地说如果将第i件玩具到第j个玩具放到一个容器中，那么容器的长度将为 x=j-i+Sigma(Ck) i<=K<=j 制作容器的费用与容器的长度有关，根据教授研究，如果容器长度为x,其制作费用为(X-L)^2.其中L是一个常量。P教授不关心容器的数目，他可以制作出任意长度的容器，甚至超过L。但他希望费用最小.
-//
-//input
-//5 4
-//3
-//4
-//2
-//1
-//4
-//
-//output
-//1
-//
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-const int maxn=50005;
-ll a[maxn], s[maxn], dp[maxn], l;
-int n;
-struct node{
-	int l, r, p;
-}q[maxn];
-ll cal(int j, int i){
-	return dp[j]+(s[i]-s[j]+i-j-1-l)*(s[i]-s[j]+i-j-1-l);
-}
-int bisearch(node a, int i){
-	int l=a.l, r=a.r+1, tag=0;//这里我的二分默认在l到r之间有答案的, 而实际上有可能a.r并不满足, 所以把区间右端点+1
-	while(l<=r){
-		if(r-l<=1){
-			if(cal(i, l)<cal(a.p, l))tag=l;
-			else tag=r;
-			break;
-		}
-		int mid=l+r>>1;
-		if(cal(i, mid)<cal(a.p, mid))r=mid;
-		else l=mid;
-	}
-	return tag;
-}
-void solve(){
-	int head=1, tail=0;
-	q[++tail]=(node){0, n, 0};
-	for(int i=1;i<=n;i++){
-		if(i>q[head].r)head++;
-		dp[i]=cal(q[head].p, i);
-		/*for(int i=head;i<=tail;i++){
-				printf("node %d %d %d\n", q[i].l, q[i].r, q[i].p);
-			}
-		cout<<i<<' '<<q[head].p<<' '<<dp[i]<<endl;*/
-		if(head>tail||cal(i, n)<cal(q[tail].p, n)){
-			while(head<=tail&&cal(i, q[tail].l)<cal(q[tail].p, q[tail].l))tail--;
-			if(head<=tail){
-				int t=bisearch(q[tail], i);
-				q[tail].r=t-1;
-				q[++tail]=(node){t, n, i};
-			}
-			else q[++tail]=(node){i, n, i};
-		}
-	}
-}
-int main(){
-	scanf("%d%lld", &n, &l);
-	for(ll i=1;i<=n;i++){
-		scanf("%lld", &a[i]);
-		s[i]=s[i-1]+a[i];
-	}
-	solve();
-	printf("%lld\n", dp[n]);
-}
-
 {
 	return (x*y-(long long)(x/(long double)P*y+1e-3)*P+P)%P;
 }
@@ -517,6 +381,7 @@ int main()
 //rm to do
 
 //Miller Rabin
+//Pollard_rho
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -525,15 +390,20 @@ typedef unsigned long long ll;
 
 const int T=10;
 
+ll mul(ll x,ll y, ll P)
+{
+	return (x*y-(ll)(x/(ll)P*y+1e-3)*P+P)%P;
+}
+
 ll exp(ll x, ll y, ll mod){
 	ll ans=1;
 	ll base=x;
 	while(y){
 		if(y&1){
-			ans=ans*base%mod;
+			ans=mul(ans, base, mod);
 		}
 		y>>=1;
-		base=base*base%mod;
+		base=mul(base, base, mod);
 	}
 	return ans;
 }
@@ -553,7 +423,7 @@ bool miller_rabin(ll n)
 		ll x=exp(a, m, n);
 		ll y=0;
 		for(int j=1;j<=k;j++){
-			y=x*x%n;
+			y=mul(x, x, n);
 			if(y==1&&x!=1&&x!=n-1)return false;
 			x=y;
 		}
@@ -562,11 +432,26 @@ bool miller_rabin(ll n)
 	return true;
 }
 
+ll Pollard_rho(ll x,ll c){
+	ll i=1,k=2;
+	ll x0=rand()%x;
+	ll y=x0;
+	while(1){
+		i++;
+		x0=(mul(x0,x0,x)+c)%x;
+		ll d=__gcd(y-x0,x);
+		if(d!=1&&d!=x) return d;
+		if(y==x0) return x;
+		if(i==k){y=x0;k+=k;}
+	}
+}
+
 void debug(){
-	int n;
+	ll n;
 	while(cin>>n){
-		if(miller_rabin(n))cout<<"YES\n";
-		else cout<<"NO\n";
+		//if(miller_rabin(n))cout<<"YES\n";
+		//else cout<<"NO\n";
+		cout<<Pollard_rho(n, rand()%(n-1)+1)<<endl;
 	}
 }
 
@@ -575,67 +460,7 @@ int main(){
 	debug();
 }
 
-//后缀数组
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
-using namespace std;
-const int maxn=20500;
-int s[maxn];
-int sa[maxn], t[maxn], t2[maxn], c[maxn], n;
-int Rank[maxn], height[maxn];
-void build_sa(int m, int n){
-	int i, *x=t, *Gy=t2;
-	for(i=0;i<m;i++)c[i]=0;
-	for(i=0;i<n;i++)c[x[i]=s[i]]++;
-	for(i=1;i<m;i++)c[i]+=c[i-1];
-	for(i=n-1;i>=0;i--)sa[--c[x[i]]]=i;
-	for(int k=1;k<=n;k<<=1){
-		int p=0;
-		for(i=n-k;i<n;i++)y[p++]=i;
-		for(i=0;i<n;i++)if(sa[i]>=k)y[p++]=sa[i]-k;
-		for(i=0;i<m;i++)c[i]=0;
-		for(i=0;i<n;i++)c[x[y[i]]]++;
-		for(i=1;i<m;i++)c[i]+=c[i-1];
-		for(i=n-1;i>=0;i--)sa[--c[x[y[i]]]]=y[i];
-		swap(x, y);
-		p=1;x[sa[0]]=0;
-		for(i=1;i<n;i++)
-			x[sa[i]]=y[sa[i-1]]==y[sa[i]]&&y[sa[i-1]+k]==y[sa[i]+k]?p-1:p++;
-		if(p>=n)break;
-		m=p;
-	}
-}
-void geth(int n){
-	int i, j, k=0;
-	for(i=0;i<n;i++)Rank[sa[i]]=i;
-	for(i=0;i<n;i++){
-		if(k)k--;
-		if(Rank[i]==0)break;
-		j=sa[Rank[i]-1];
-		while(s[i+k]==s[j+k])k++;
-		height[Rank[i]]=k;
-	}
-}
 
-int main()
-{
-	n=8;
-	s[8]=0;
-	s[0]=s[1]=2;
-	s[2]=s[3]=s[4]=s[5]=1;
-	s[6]=s[7]=3;
-	build_sa(200, n+1);
-	geth(n+1);
-	for(int i=0;i<=n;i++){
-		printf("%d ", sa[i]);
-	}
-	printf("\n");
-	for(int i=1;i<=n;i++){
-		printf("%d ", height[i]);
-	}
-	printf("\n");
-}
 
 //AC自动机
 //查询模式串出现次数
@@ -828,7 +653,7 @@ void getrt(int u, int fa){
 
 void getdeep(int u, int fa, ll len){
 	vs[++vsc]=len;
-	v[++vc]=https://www.nowcoder.com/acm/contest/vip-contest-indexlen;
+	v[++vc]=len;
 	for(int i=head[u];~i;i=edge[i].next){
 		if(edge[i].to!=fa&&!vis[edge[i].to]){
 			getdeep(edge[i].to, u, len+edge[i].len);

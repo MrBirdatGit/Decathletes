@@ -1,48 +1,21 @@
-/* 数学 */
-/* 扩展欧几里得 */
-/* 素数线性筛 */
-/* 中国剩余定理 */
-/* 卢卡斯定理 */
-/* 逆元 */
-/* 欧拉函数 */
-/* 莫比乌斯函数 */
-/* 威佐夫博弈 */
-/* 反NIM博弈 */
-/* NTT/FFT/FWT */
-/* Miller_Rabin */
-/* 线性递推m^2logn */
-/* polya定理 */
-
-/* 数据结构 */
-/* 单调队列 */
-/* 吉司机线段树 */
-/* 主席树 */
-/* splay */
-/* 树链剖分 */
-
-/* 字符串 */
-/* 后缀数组 */
-/* AC自动机 */
-
-/* 图论 */
-/* lca */
-/* tarjan */
-/* 2-sat */
-/* 网络流 */
-/* KM */
-/* 欧拉图 */
-/* 点分治 */
-
-/* dp */
-/* 数位dp */
-/* 斜率优化 */
-/* 四边形优化 */
-/* 决策单调性 */
-
-/* 其他 */
-/* 输入外挂 */
-/* bitset */
-/* O(1)快速乘 */
+//扩展欧几里得
+//素数线性筛
+//中国剩余定理
+//逆元
+//FFT
+//NTT
+//MILLER_RABIN 
+//AC自动机
+//数位DP
+//点分治
+//线性递推模板m^2logn
+//吉司机线段树
+//树链剖分
+//二分图匹配
+//决策单调性
+//bitset
+//树状数组区间修改区间查询
+//SA
 
 //扩展欧几里得
 //求ax+by=gcd(a, b)的解
@@ -198,16 +171,6 @@ void fft(complex y[],int len,int on)
 		for(int j = 0;j < len;j+=h)
 		{
 			complex w(1,0);
-int main(){
-	scanf("%d%lld", &n, &l);
-	for(ll i=1;i<=n;i++){
-		scanf("%lld", &a[i]);
-		s[i]=s[i-1]+a[i];
-	}
-	solve();
-	printf("%lld\n", dp[n]);
-}
-
 			for(int k = j;k < j+h/2;k++)
 			{
 				complex u = y[k];
@@ -957,6 +920,7 @@ int main(){
 }
 
 //树链剖分
+//给你一颗树，现在有两个操作，一种是改变某条边的权值，一种是查询点u到v之间的路径的最大边权
 //input:
 //1
 //3
@@ -1103,6 +1067,96 @@ int main(){
 	}
 }
 
+//二分图匹配
+//用和为素数的二元组覆盖最多的数
+#include <bits/stdc++.h>
+using namespace std;
+const int maxn=3003;
+const int maxe=3003*3003;
+vector<int>g[maxn];
+int head[maxn], linker[maxn], vis[maxn], n, k, sum;
+void init(){
+	memset(linker, -1, sizeof(linker));
+	for(int i=0;i<n;i++)g[i].clear();
+	sum=0;
+}
+void add(int u, int v){
+	g[u].push_back(v);
+}
+int num[maxn];
+bool isprime[2000005];
+void init1(){
+	memset(isprime, true, sizeof(isprime));
+	isprime[0]=isprime[1]=false;
+	for(int i=2;i<=2000000;i++){
+		if(isprime[i]){
+			for(int j=2;j*i<=2000000;j++)isprime[i*j]=false;
+		}
+	}
+}
+bool cmp(int x, int y){
+	return x>y;
+}
+int Find(int u){
+	for(int i=0;i<g[u].size();i++){
+		int v=g[u][i];
+		if(!vis[v]){
+			vis[v]=1;
+			if(linker[v]==-1||Find(linker[v])){
+				linker[v]=u;
+				linker[u]=v;
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+int match(){
+	int ans=0;
+	for(int i=0;i<n;i++){
+		if(num[i]&1&&linker[i]==-1){
+			memset(vis, 0, sizeof(vis));
+			vis[i]=true;
+			ans+=Find(i);
+		}
+	}
+	return ans;
+}
+int main(){
+	init1();
+	int T;
+	scanf("%d", &T);
+	while(T--){
+		scanf("%d%d", &n, &k);
+		init();
+		for(int i=0;i<n;i++){
+			scanf("%d", &num[i]);
+		}
+		sort(num, num+n, cmp);
+		for(int i=0;i<n;i++){
+			bool ok=false;
+			for(int j=0;j<n;j++){
+				if(i==j)continue;
+				if(isprime[num[i]+num[j]]){
+					ok=true;
+					add(i, j);
+				}
+			}
+			if(ok)sum++;
+		}
+		for(int i=0;i<n;i++)sort(g[i].begin(), g[i].end());
+		if(sum<=k){
+			printf("%d\n", sum);
+		}
+		else {
+			int m=match();
+			if(m>=k)printf("%d\n", 2*k);
+			else if(sum-m<=k)printf("%d\n", sum);
+			else printf("%d\n", k+m);
+		}
+	}
+}
+
 //bzoj1010
 //决策单调性
 //
@@ -1224,6 +1278,56 @@ int main(){
 	printf("-1\n");
 }
 
+
+
+//好题
+//问题归结为:
+//能否将总重量不大于1e6的砝码分成两堆, 其中一堆重量为k
+//用多重背包的按位拆分+bitset可以达到o(k*sigma(logAi)/64)
+//而由于sigma(i*Ai)=n, 最坏情况O(sigma(logAi))~O(sqrt(n))
+//所以总复杂度是O(k*sqrt(n)/64)
+#include <bits/stdc++.h>
+using namespace std;
+
+int a[1050000];
+bool vis[1050000];
+int cnt[1050000];
+bitset<1050000>b;
+int n, k;
+int ma=0, mi, bonus=0;
+
+int main(){
+	scanf("%d%d", &n, &k);
+	for(int i=1;i<=n;i++)scanf("%d", &a[i]);
+	for(int i=1;i<=n;i++){
+		if(vis[i])continue;
+		int tmp=i;
+		int len=0;
+		while(!vis[tmp]){
+			vis[tmp]=true;
+			len++;
+			tmp=a[tmp];
+		}
+		cnt[len]++;
+		bonus+=len/2;
+	}
+	ma=min(n, k+min(bonus, k));
+	b[0]=1;
+	for(int i=1;i<=n;i++){
+		if(!cnt[i])continue;
+		int k=1;
+		while(k<cnt[i]){
+			b|=b<<k*i;
+			cnt[i]-=k;
+			k<<=1;
+		}
+		b|=b<<cnt[i]*i;
+	}
+	if(b[k])mi=k;
+	else mi=k+1;
+	printf("%d %d\n", mi, ma);
+}
+
 //树状数组区间修改区间查询
 //sum[n]=sigma(a[i])+sigma((n+1-i)d[i]);
 //其中a[i]是原数组元素
@@ -1285,4 +1389,68 @@ int main()
 		}
 	}
 }
+
+//SA
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+const int maxn=20500;
+int s[maxn];
+int sa[maxn], t[maxn], t2[maxn], c[maxn], n;
+int Rank[maxn], height[maxn];
+void build_sa(int m, int n){
+	int i, *x=t, *y=t2;
+	for(i=0;i<m;i++)c[i]=0;
+	for(i=0;i<n;i++)c[x[i]=s[i]]++;
+	for(i=1;i<m;i++)c[i]+=c[i-1];
+	for(i=n-1;i>=0;i--)sa[--c[x[i]]]=i;
+	for(int k=1;k<=n;k<<=1){
+		int p=0;
+		for(i=n-k;i<n;i++)y[p++]=i;
+		for(i=0;i<n;i++)if(sa[i]>=k)y[p++]=sa[i]-k;
+		for(i=0;i<m;i++)c[i]=0;
+		for(i=0;i<n;i++)c[x[y[i]]]++;
+		for(i=1;i<m;i++)c[i]+=c[i-1];
+		for(i=n-1;i>=0;i--)sa[--c[x[y[i]]]]=y[i];
+		swap(x, y);
+		p=1;x[sa[0]]=0;
+		for(i=1;i<n;i++)
+			x[sa[i]]=y[sa[i-1]]==y[sa[i]]&&y[sa[i-1]+k]==y[sa[i]+k]?p-1:p++;
+		if(p>=n)break;
+		m=p;
+	}
+}
+void geth(int n){
+	int i, j, k=0;
+	for(i=0;i<n;i++)Rank[sa[i]]=i;
+	for(i=0;i<n;i++){
+		if(k)k--;
+		if(Rank[i]==0)break;
+		j=sa[Rank[i]-1];
+		while(s[i+k]==s[j+k])k++;
+		height[Rank[i]]=k;
+	}
+}
+
+int main()
+{
+	n=8;
+	s[8]=0;
+	s[0]=s[1]=2;
+	s[2]=s[3]=s[4]=s[5]=1;
+	s[6]=s[7]=3;
+	build_sa(200, n+1);
+	geth(n+1);
+	for(int i=0;i<=n;i++){
+		printf("%d ", sa[i]);
+	}
+	printf("\n");
+	for(int i=1;i<=n;i++){
+		printf("%d ", height[i]);
+	}
+	printf("\n");
+
+}
+
 

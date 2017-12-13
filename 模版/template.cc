@@ -1,3 +1,4 @@
+//输入外挂
 //扩展欧几里得
 //素数线性筛
 //中国剩余定理
@@ -16,6 +17,31 @@
 //bitset
 //树状数组区间修改区间查询
 //SA
+
+//输入外挂
+#include <bits/stdc++.h>
+using namespace std;
+template <class T>
+inline bool scan_d(T &ret){
+	char c; int sgn;
+	if(c=getchar(), c==EOF)return 0;
+	while(c!='-'&&(c<'0'||c>'9'))c=getchar();
+	sgn=(c=='-')?-1:1;
+	ret=(c=='-')?0:(c-'0');
+	while(c=getchar(), c>='0'&&c<='9')ret=ret*10+c-'0';
+	ret*=sgn;
+	return 1;
+}
+
+int main(){
+	int a, b;
+	while(1){
+		scan_d(a);
+		scan_d(b);
+		cout<<a+b<<endl;
+	}
+}
+
 
 //扩展欧几里得
 //求ax+by=gcd(a, b)的解
